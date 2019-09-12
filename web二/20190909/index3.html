@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    var b1=true;
+    var b2=false;
+    var u1=undefined;
+    var n1=null;
+    var str1="100";
+    var str2='1a2b3c';
+
+    /*
+        强制的类型转换，
+        parseInt();
+        parseFloat();
+        Number();
+    * */
+    var num1=b1+0;//1
+    var num2=b2+0;//0
+    var num3=u1+0;//NaN
+    var num4=n1+0;//0
+    var num5=Number(str2);
+    /*parseInt()将变量转换成整数*/
+    var num6=parseFloat(str1);
+    var num7=parseInt(str2);
+    alert(num7);
+    // for(var i=1;i<=8;i++)
+    // {
+    //     var a="num"+i;
+    //     console.log(a);
+    // }
+
+    //数值转换为字符串类型
+    /*
+        -转换为数值本身：
+        123456+"" -> "123456"
+        NaN+"" ->"NaN"
+    * */
+</script>
+</html>
