@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    //函数关键字：function
+    /*
+    function 函数名（参数）{
+
+    }
+    * */
+    function fn1(arg1){
+        return arg1;
+    }
+    document.write(fn1("hello world <br/>"));
+
+    // //匿名函数,直接在函数后面加个括号就可以使用了~函数只执行一次，而且想让他形成自己的作用域
+    // (function () {
+    //     document.write("hello 函数~~<br/>");
+    // })()
+
+    // (function(userName){
+    //     document.write(userName);
+    // })("战三")
+
+    // window.onload=function(){
+    //     alert("页面加载完成");
+    // }
+
+    var add=function (num1,num2) {
+        return num1+num2;
+    };
+
+    document.write(add(6,9));
+</script>
+</html>

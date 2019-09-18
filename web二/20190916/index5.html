@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button id="btn">点击事件</button>
+    <form action="" method="" onsubmit="submit1()">
+        <input type="submit" value="提交">
+    </form>
+</body>
+<script>
+    var btn=document.getElementById("btn");
+    btn.onclick=function () {
+        alert("红米K20，生死看淡，不服就干，敢KO~");
+    }
+    //页面刷新或者页面关闭是会触发
+    btn.onunload=function () {
+        alert("像风一样~");
+    };
+    function submit1() {
+        alert("提交表单~");
+
+    }
+
+</script>
+</html>
