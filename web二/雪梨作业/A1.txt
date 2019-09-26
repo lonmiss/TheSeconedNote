@@ -1,0 +1,39 @@
+1、A B C
+2、A B C
+3、A
+4、D
+5、B
+6、45
+7、1      2
+    var a = (10 * 3 - 4 / 2 + 1) % 2; ---> a=1;
+    var b = 3;		    ---> b=3;
+    b %= a + 3;		    --->b=b%4=b=3;   b=3;
+    console.log(a++); 		    --->"a++"a先输出，后++，所以此时输出为1
+    console.log(--b);		    --->“--b”,b先--，后输出，b从3变成2，所以输出为2		    
+8、-7
+9、（1）、HTML文件内部javaScript代码
+     （2）、外部JavaScript文件
+注意事项：
+	1、在HTML文件中，任何javaScript代码必须放到<script>标签中
+	2、理论上可以写在HTML文件的任何位置，但是为了代码的清晰，通常：
+		（1）、<script>放在<head>标签中
+		（2）、<script>放在<body>结束标签之前
+	3、把javascript代码放到外部文件中，在HTML代码中直接引用该文件
+		（1）、外部文件定义为：*.js
+		（2）、外部文件可以在HTML中的head或body中引用
+		（3）、一次定义可以重复引用
+	4、外部脚本文件，不能含有<script>标签，只能含有JavaScript代码
+	5、引入外部文件时，HTML文件的<script>标签中间不能写JavaScript代码
+	（若同时有外部JavaScript文件引入与内部JavaScript代码，需要各自使用<script>标签）
+
+10、
+Number类型：
+	1、3.12、1e6、NaN
+String类型：
+	‘hello’、“world”、“34”
+Boolean类型：
+	true、false
+Undefined类型：
+	声明但未赋值：var a;
+Null类型：
+	只有一个值null，表示值为空

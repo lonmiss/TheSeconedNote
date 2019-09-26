@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+	<title>calculate </title>
+	<meta http-equiv = "Content-Type" content = "text/html;charaset = utf-8"/>
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/compute.js"></script>
+  </head>
+ <body>
+	<table>
+			<tr>
+				<td colspan="3" id="result">0</td>
+				<td><button type="button" value="C" onclick="f()">C</button></td>
+			</tr>
+			<tr>
+				<td><button type="button" value="1" onclick="showDate(this)">1</button></td>
+				<td><button type="button" value="2" onclick="showDate(this)">2</button></td>
+				<td><button type="button" value="3" onclick="showDate(this)">3</button></td>
+				<td><button type="button" value="+" onclick="showDate(this)">+</button></td>
+			</tr>
+			<tr>
+				<td><button type="button" value="4" onclick="showDate(this)">4</button></td>
+				<td><button type="button" value="5" onclick="showDate(this)">5</button></td>
+				<td><button type="button" value="6" onclick="showDate(this)">6</button></td>
+				<td><button type="button" value="-" onclick="showDate(this)">-</button></td>
+			</tr>
+			<tr>
+				<td><button type="button" value="7" onclick="showDate(this)">7</button></td>
+				<td><button type="button" value="8" onclick="showDate(this)">8</button></td>
+				<td><button type="button" value="9" onclick="showDate(this)">9</button></td>
+				<td><button type="button" value="*" onclick="showDate(this)">*</button></td>
+			</tr>
+			<tr>
+				<td><button type="button" value="0" onclick="showDate(this)">0</button></td>
+				<td><button type="button" value="." onclick="showDate(this)">.</button></td>
+				<td><button type="button" value="=" onclick="calculate() ">=</button></td>
+				<td><button type="button" value="/" onclick="showDate(this)">/</button></td>
+			</tr>	
+				
+		</table>	
+ </body>
+ <script>
+	 var  result=document.getElementById("result")
+	 function showDate(which) {
+	 	if (result.innerHTML==0)
+		{
+			result.innerHTML=which.value;
+			return;
+		}//删01一样的BUG
+		 result.innerHTML=result.innerHTML+which.value;
+		 //alert(result.innerHTML);
+	 }
+	 function  calculate() {
+		 var cal=eval(result.innerHTML);//eval直接将运算式计算得到结果
+		 document.getElementById("result").innerHTML = '';
+		 result.innerHTML=cal;
+	 }
+	 function f() {
+		 document.getElementById("result").innerHTML = '';
+	 }
+ </script>
+</html>

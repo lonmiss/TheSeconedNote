@@ -2,8 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f79c037-b5ae-407e-a312-b1feca76e798" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/class0905/ByMyself/信号报告.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/class0905/ByMyself/信号报告.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/class0905/Class0919/2019_9_19class.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/class0905/Class0919/2019_9_19class.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ByMyself/类And包And接口/类的继承.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ByMyself/类And包And接口/类的继承.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homeWork/XueLiWork1_3_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homeWork/XueLiWork1_3_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../web二/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../web二/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../数据结构/.vs/ProjectSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../数据结构/.vs/VSWorkspaceState.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../数据结构/.vs/slnx.sqlite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../数据结构/.vs/数据结构/v15/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../数据结构/.vs/数据结构/v15/Browse.VC.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../数据结构/.vs/数据结构/v15/ipch/AutoPCH/14374e7238c045d/2_1 静态顺序存储线性表的基本实现_1.ipch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../数据结构/.vs/数据结构/v15/ipch/AutoPCH/55c7f8b38f01b1b/2_1 静态顺序存储线性表的基本实现.ipch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../数据结构/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../数据结构/.vscode/tasks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../数据结构/雪梨作业/First/First.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../数据结构/雪梨作业/First/First.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../数据结构/雪梨作业/First/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../数据结构/雪梨作业/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../数据结构/雪梨作业/作业一/2_1 静态顺序存储线性表的基本实现_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../../数据结构/雪梨作业/作业一/2_1 静态顺序存储线性表的基本实现_1.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../离散数学/离散数学.zip" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,11 +36,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/homeWork/XueLiWork1_3_2.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Class0926/类和对象2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="105">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Class0924/Student.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+              <folding>
+                <element signature="e#140#141#0" expanded="true" />
+                <element signature="e#166#167#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Class0926/NoteBook.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -67,15 +109,22 @@
         <option value="$PROJECT_DIR$/src/Class0919/2019_9_19class.md" />
         <option value="$PROJECT_DIR$/src/Class0919/student.java" />
         <option value="$PROJECT_DIR$/src/Class0919/Demo1.java" />
-        <option value="$PROJECT_DIR$/src/ByMyself/类And包And接口/类的继承.java" />
         <option value="$PROJECT_DIR$/src/ByMyself/类And包And接口/Super的使用.java" />
         <option value="$PROJECT_DIR$/src/homeWork/XueLiWork1_3_2.java" />
+        <option value="$PROJECT_DIR$/src/homeWork/XueLiWork1_3_13.java" />
+        <option value="$PROJECT_DIR$/src/ByMyself/类And包And接口/类的继承.java" />
+        <option value="$PROJECT_DIR$/src/ByMyself/类And包And接口/父类对象的引用强制转换成子类对象.java" />
+        <option value="$PROJECT_DIR$/src/ByMyself/类And包And接口/类.java" />
+        <option value="$PROJECT_DIR$/src/Class0924/2019_9_24.md" />
+        <option value="$PROJECT_DIR$/src/Class0924/类和对象.java" />
+        <option value="$PROJECT_DIR$/src/Class0924/Student.java" />
+        <option value="$PROJECT_DIR$/src/Class0926/类和对象2.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="751" />
-    <option name="width" value="622" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-7" />
+    <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -104,7 +153,13 @@
               <item name="class0905" type="b2602c69:ProjectViewProjectNode" />
               <item name="class0905" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="homeWork" type="462c0819:PsiDirectoryNode" />
+              <item name="Class0924" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="class0905" type="b2602c69:ProjectViewProjectNode" />
+              <item name="class0905" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Class0926" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="class0905" type="b2602c69:ProjectViewProjectNode" />
@@ -119,6 +174,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -132,13 +188,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Xuelizuoye1_3_1">
-    <configuration name="温度转化" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ByMyself.温度转化" />
+  <component name="RunManager" selected="Application.类和对象">
+    <configuration name="父类对象的引用强制转换成子类对象" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ByMyself.类And包And接口.父类对象的引用强制转换成子类对象" />
       <module name="class0905" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ByMyself.*" />
+          <option name="PATTERN" value="ByMyself.类And包And接口.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,12 +202,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Class0919.Demo1" />
+    <configuration name="类和对象" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Class0924.类和对象" />
       <module name="class0905" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Class0919.*" />
+          <option name="PATTERN" value="Class0924.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XueLiWork1_3_13" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homeWork.XueLiWork1_3_13" />
+      <module name="class0905" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="homeWork.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XueLiWork1_3_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homeWork.XueLiWork1_3_2" />
+      <module name="class0905" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="homeWork.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -172,12 +254,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="时间换算" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ByMyself.时间换算" />
+    <configuration name="类和对象" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Class0924.类和对象" />
       <module name="class0905" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ByMyself.*" />
+          <option name="PATTERN" value="Class0924.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -237,25 +319,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="demo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Class0917.demo1" />
-      <module name="class0905" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Class0917.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.类和对象" />
+        <item itemvalue="Application.XueLiWork1_3_2" />
+        <item itemvalue="Application.父类对象的引用强制转换成子类对象" />
+        <item itemvalue="Application.XueLiWork1_3_13" />
         <item itemvalue="Application.Xuelizuoye1_3_1" />
-        <item itemvalue="Application.Demo1" />
-        <item itemvalue="Application.demo1" />
-        <item itemvalue="Application.温度转化" />
       </list>
     </recent_temporary>
   </component>
@@ -273,9 +343,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="751" y="0" width="622" height="735" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.19894099" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21482602" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -284,7 +355,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2590164" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3622951" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -292,7 +363,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3229508" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3262295" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -444,13 +515,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ByMyself/类And包And接口/类的继承.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ByMyself/类And包And接口/Super的使用.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -458,10 +522,84 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/homeWork/XueLiWork1_3_13.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ByMyself/类And包And接口/类的继承.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ByMyself/类And包And接口/父类对象的引用强制转换成子类对象.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ByMyself/类And包And接口/类.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Class0924/2019_9_24.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="525">
+            <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/homeWork/XueLiWork1_3_2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="105">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Class0924/类和对象.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Class0926/NoteBook.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Class0926/类和对象2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Class0924/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding>
+            <element signature="e#140#141#0" expanded="true" />
+            <element signature="e#166#167#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

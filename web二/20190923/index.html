@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    var str="hello world";
+    // alert(str.length);
+    // alert(str.charAt(1));
+    // var index=str.indexOf("world");
+    // console.log(index);
+    // var index1=str.indexOf("javascript");
+    // console.log(index1);//-1
+
+    var childStr=str.slice(0,5);
+    console.log(childStr);//hello
+
+    var childStr1=str.slice(-2);//起始位置，到最后位置
+    console.log(childStr1);//ld
+
+    var childStr2=str.slice(0);
+    console.log(childStr2);//hello world
+
+    //省略文本
+    var text="123456789123456789123456789";
+    text=text.slice(0,9)+"........";
+    console.log(text);
+
+    /*
+        slice(start,end);
+        在字符串中截取子串
+        指定截取的起始位置还有结束位置
+
+        start和end可以为负值
+        end结束位置可以缺省，缺省表示截取到字符串的结束位置
+    * */
+    var sums="1,2,3,4,5,6,7,8,9";
+    var arr=sums.split(",",6);
+    console.log(arr);//["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+
+    var text11="abCD";
+    var t1=text11.toUpperCase();
+    var t2=text11.toLowerCase();
+    console.log(t1+"    "+t2);//ABCD    abcd
+
+
+
+</script>
+</html>
+<!--/*-->
+    <!--字符串和数组-->
+<!--问题：往表格中加数据-->
+<!--1、如何表示各个单元格的信息-->
+<!--2、如何表示一条记录的信息？-->
+
+<!--*/-->

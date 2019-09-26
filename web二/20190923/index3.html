@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    var arr1=["acFE",156,true,undefined,null];
+    var arr2=new Array(5);
+    //构造数组的实例化
+    var arr3=new Array("hello","world");
+    console.log(arr1);
+    console.log(arr3);
+
+    //二维数组
+    var arr4=[
+        ["帖子1的标题","a","帖子内容","2019-9-10"],
+        ["帖子2的标题","b","帖子内容","2019-9-11"],
+        ["帖子3的标题","c","帖子内容","2019-9-12"],
+        ["帖子4的标题","d","帖子内容","2019-9-13"],
+    ];
+    console.log(arr4[0][0]);
+    var arr=["red","blue","yellow"];
+    arr[arr.length]="purple";
+
+    console.log(arr);//["red", "blue", "yellow", "purple"]
+    console.log(arr.length);//4
+</script>
+</html>

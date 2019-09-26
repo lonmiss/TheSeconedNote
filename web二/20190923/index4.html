@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    var arr=[
+        ["标题","发帖人","发帖概括","发帖时间"],
+        ["第1条帖子","a","第1条帖子......","2019.09.23"],
+        ["第2条帖子","b","第2条帖子......","2019.09.23"],
+        ["第3条帖子","c","第3条帖子......","2019.09.23"],
+        ["第4条帖子","d","第4条帖子......","2019.09.23"],
+        ["第5条帖子","e","第5条帖子......","2019.09.23"]
+    ];
+    document.write("<table border='1' cellpadding='5' cellspacing='0' align='center' height='300px' width='400px'>");
+    for (var i = 0; i < 6; i++) {
+        document.write("<tr>");
+        for (var j = 0; j < 4; j++) {
+            document.write("<td>"+arr[i][j]+"</td>")
+        }
+        document.write("</tr>");
+    }
+    document.write("</table>");
+
+    function createTableHeader(){
+        document.write("<table>");
+        document.write("<tr>");
+        for (var i = 0; i < arr.length; i++) {
+            document.write("<th>");
+            document.write(arr[i]);
+            document.write("</th>");
+        }
+        document.write("</tr>");
+        document.write("</table>");
+    }
+    function createTableContent() {
+        for (var i = 0; i < arr.length; i++) {
+            document.write("<tr>");
+            for (var j = 0; j <arr[0].length ; j++) {
+                document.write("<td>");
+                if(j==2)
+                {
+                    document.write(arr[i][j].slice(0,5));
+                }else{
+                    document.write(arr[i][j]);
+                }
+                document.write("</td>");
+            }
+            document.write("</tr>");
+        }
+    }
+
+    createTableHeader();
+
+    document.write("<table border='1' cellpadding='5' cellspacing='0' align='center' height='300px' width='400px'>");
+    createTableContent();
+    document.write("</table>");
+</script>
+</html>
