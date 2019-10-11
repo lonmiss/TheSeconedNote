@@ -1,0 +1,64 @@
+package Homework3;
+
+
+import java.io.FileInputStream;
+
+import org.apache.poi.hssf.usermodel.HSSFCell;
+import org.apache.poi.hssf.usermodel.HSSFRow;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+
+public class Main {
+	//读取所有学生成绩单中期末成绩
+	public static void readExcel()
+	{
+		try
+		{
+			
+			FileInputStream  in = new FileInputStream("F:\\大二上\\TheSeconedNote\\java\\雪梨作业\\三\\实验一\\成绩单.xls");
+			HSSFWorkbook workbook = new HSSFWorkbook(in);
+			HSSFSheet sheet = workbook.getSheetAt(0);//第一张表
+			HSSFRow row;
+			HSSFCell cell;
+			
+			row = sheet.getRow(1);//得到工作表中第一行的引用，第一行的索引是0
+			cell = row.getCell(6);
+			
+			for(int i=0;i<54;i++)
+			{
+				row = sheet.getRow(i+1);//得到工作表中第一行的引用，第一行的索引是0
+				cell = row.getCell(6); //得到某一行的第一个单元格，单元格的索引也是从0开始
+				//System.out.println(cell.getNumericCellValue());
+				nums[i]=cell.getNumericCellValue();
+			}
+			
+			//处理数据
+			Double max=nums[0],min=nums[0];
+			Double sum=nums[0];
+			for (int i = 1; i < nums.length; i++) {
+				if(nums[i]>max)
+				{
+					max=nums[i];
+				}
+				if(nums[i]<min)
+				{
+					min=nums[i];
+				}
+				sum+=nums[i];
+			}
+			System.out.println("max:"+max+"	min:"+min+"	平均数："+sum/54);
+			
+			in.close();
+		}
+		catch (Exception e) 
+		{//上面程序正确时，不会执行此处代码
+	        System.out.println("出错了！");
+	        e.printStackTrace();
+		}
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		readExcel();
+	}
+
+}

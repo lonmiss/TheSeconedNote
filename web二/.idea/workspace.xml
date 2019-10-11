@@ -3,24 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="eab3f6aa-7353-4c4d-a48e-a39b6fdc3a12" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../java/workspace/class0905/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java/workspace/class0905/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java/workspace/class0905/out/production/class0905/Class0919/2019_9_19class.md" beforeDir="false" afterPath="$PROJECT_DIR$/../java/workspace/class0905/out/production/class0905/Class0919/2019_9_19class.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java/workspace/class0905/src/homeWork/XueLiWork1_3_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java/workspace/class0905/src/homeWork/XueLiWork1_3_2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../数据结构/.vs/ProjectSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../数据结构/.vs/VSWorkspaceState.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../数据结构/.vs/slnx.sqlite" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../数据结构/.vs/数据结构/v15/.suo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../数据结构/.vs/数据结构/v15/Browse.VC.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../数据结构/.vs/数据结构/v15/ipch/AutoPCH/14374e7238c045d/2_1 静态顺序存储线性表的基本实现_1.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../数据结构/.vs/数据结构/v15/ipch/AutoPCH/55c7f8b38f01b1b/2_1 静态顺序存储线性表的基本实现.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../数据结构/.vscode/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../数据结构/.vscode/tasks.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../数据结构/雪梨作业/First/First.cbp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../数据结构/雪梨作业/First/First.layout" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../数据结构/雪梨作业/First/main.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../数据结构/雪梨作业/main.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../数据结构/雪梨作业/作业一/2_1 静态顺序存储线性表的基本实现_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/../数据结构/雪梨作业/作业一/2_1 静态顺序存储线性表的基本实现_1.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../离散数学/离散数学.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/workspace/class0905/out/production/class0905/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/workspace/class0905/out/production/class0905/Class0926/类和对象2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../java/workspace/class0905/out/production/class0905/Class0926/类和对象2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/workspace/class0905/src/Class0926/NoteBook.md" beforeDir="false" afterPath="$PROJECT_DIR$/../java/workspace/class0905/src/Class0926/NoteBook.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/workspace/class0905/src/Class0926/类和对象2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java/workspace/class0905/src/Class0926/类和对象2.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,41 +19,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/20190923/0923Noted.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="342">
-                <caret line="42" column="43" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/20190923/index4.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="60" column="31" lean-forward="true" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/20190916/index1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="19" column="118" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="118" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/20190923/index3.html">
+        <entry file="file://$PROJECT_DIR$/20190930/index8.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="389">
-              <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="29" selection-end-column="31" />
+              <caret line="49" column="6" lean-forward="true" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/20190930/对象.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="152">
+                <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -116,6 +84,15 @@
         <option value="$PROJECT_DIR$/20190923/index3.html" />
         <option value="$PROJECT_DIR$/20190923/0923Noted.md" />
         <option value="$PROJECT_DIR$/20190923/index4.html" />
+        <option value="$PROJECT_DIR$/20190930/index1.html" />
+        <option value="$PROJECT_DIR$/20190930/index2.html" />
+        <option value="$PROJECT_DIR$/20190930/index3.html" />
+        <option value="$PROJECT_DIR$/20190930/index4.html" />
+        <option value="$PROJECT_DIR$/20190930/index5.html" />
+        <option value="$PROJECT_DIR$/20190930/index6.html" />
+        <option value="$PROJECT_DIR$/20190930/index7.html" />
+        <option value="$PROJECT_DIR$/20190930/对象.md" />
+        <option value="$PROJECT_DIR$/20190930/index8.html" />
       </list>
     </option>
   </component>
@@ -143,22 +120,7 @@
             <path>
               <item name="web二" type="b2602c69:ProjectViewProjectNode" />
               <item name="web二" type="462c0819:PsiDirectoryNode" />
-              <item name="20190916" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web二" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web二" type="462c0819:PsiDirectoryNode" />
-              <item name="20190923" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web二" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web二" type="462c0819:PsiDirectoryNode" />
-              <item name="Web（二）" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web二" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web二" type="462c0819:PsiDirectoryNode" />
-              <item name="自学" type="462c0819:PsiDirectoryNode" />
+              <item name="20190930" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -169,6 +131,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -185,6 +148,29 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.index8.html">
+    <configuration name="index5.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/web二/20190930/index5.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index8.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/web二/20190930/index8.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index8.html" />
+        <item itemvalue="JavaScript Debug.index5.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -203,21 +189,22 @@
       <workItem from="1568597408584" duration="9502000" />
       <workItem from="1569116680491" duration="1672000" />
       <workItem from="1569203288590" duration="7888000" />
+      <workItem from="1569808112538" duration="7961000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38169000" />
+    <option name="totallyTimeSpent" value="46130000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.171875" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.171875" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3295082" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -428,17 +415,17 @@
     <entry file="file://$PROJECT_DIR$/20190923/0923Noted.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="342">
+          <first_editor relative-caret-position="798">
             <caret line="42" column="43" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/20190923/index3.html">
+    <entry file="file://$PROJECT_DIR$/20190923/index4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="29" selection-end-column="31" />
+        <state relative-caret-position="-190">
+          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -449,10 +436,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/20190923/index4.html">
+    <entry file="file://$PROJECT_DIR$/20190923/index3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="60" column="31" lean-forward="true" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
+        <state relative-caret-position="389">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="29" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20190930/index3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="25" column="42" lean-forward="true" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20190930/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20190930/index1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="46" column="7" lean-forward="true" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20190930/index4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20190930/index5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20190930/index6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20190930/index7.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="21" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20190930/对象.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="152">
+            <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20190930/index8.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="49" column="6" lean-forward="true" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
         </state>
       </provider>
     </entry>

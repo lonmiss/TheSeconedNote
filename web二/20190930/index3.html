@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    var arr=["赵","钱","孙","李","白","庞"]
+
+    /*
+        定义一个函数，传入参数，判断传入的姓氏是否存在数组中，
+        如果存在，删除传入姓氏之后的两个姓氏
+     */
+    // function delName(arr,cnt) {
+    //     if (arr.indexOf(cnt)>0) {
+    //         arr.splice(arr.indexOf(cnt)+1, 2);
+    //     }
+    //     return arr;
+    // }
+    // var str=delName(arr,"孙");
+    // document.write(str);
+    function getArr(familyName) {
+        var index=arr.indexOf(familyName);
+        if(index==-1)
+        {
+            console.log("该姓氏不存在");
+        }else
+        {
+            var arr1=arr.slice(index+1,index+3);//切片的用法
+            document.write(arr1);
+        }
+    }
+    getArr("孙");
+
+
+</script>
+</html>

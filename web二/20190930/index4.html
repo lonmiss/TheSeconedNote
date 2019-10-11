@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    /*
+        添加元素
+            unshift()向数组的起始位置添加一个新的数组元素，并且返回新数组的长度，也会改变原数组
+            push() 向数组的结束位置添加一个新的数组元素，并且返回新数组的长度，也会改变原数组
+            concat() 可以往里面添加一个或者多个元素，也可以添加一个或者多个数组
+                参数可以是多个基本数据类型的值，会将值添加到数组中
+                参数也可以是多个数组，会合并完成数组的合并
+
+                concat不会对原数组产生影响
+     */
+    var arr=[1,2,3,4,5];
+    document.write(arr.unshift(0)+"<br>");//6
+
+    var arr1=['a','b','c'];
+    arr1.push("d");
+    document.write(arr1+"<br>");
+
+    var arr2=["hello","world"];
+    var arr3=arr2.concat("JavaScript");
+    document.write(arr2+"<br>");//hello,world
+    document.write(arr3+"<br>");//hello,world,JavaScript
+
+    var arr4=["a","b","c"];
+
+    var arr5=arr4.splice(0,0,"d");
+    document.write(arr5);
+
+</script>
+</html>

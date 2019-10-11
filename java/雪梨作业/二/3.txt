@@ -1,0 +1,27 @@
+equals:
+      1、先判断引用值是否相同，（就是判断它们是否指向同一空间），如果是同一引用值的
+话，返回为true
+      2、然后在判断二者之间的是否是同一类型，如果两个对象等价，前提是它们一定为相同
+的类型，如果不是的话，返回flase
+      3、前俩步都没有返回的值的话，记录value的长度，根据长度进行循环，然后一个字符一个
+字符进行判断，如果中间有不一样的话，就返回flase，如果循环完成后，就返回true
+
+indexOf:
+     1、先把String转换为char[]，然后首先找到target的的第一个字符开始匹配
+     2、先拿
+	int sourceCount = source.length;  
+    	int targetCount = target.length; 
+         分别记录两个数据的长度
+     3、byte first = target[0]; 记录target的第一个字符
+     4、用i记录循环次数，用一个数记录二者长度的差值~也就是寻找第一个字符的最大循环次数
+     5、找到后，先判断i是否超出二者长度的差值
+     6、里面再用循环
+	int j = i + 1;
+           	int end = j + targetCount - 1;
+           	for (int k = targetOffset + 1; j < end && source[j]== target[k]; j++, k++);
+	//这里面，是后面的字符进行判断是否一样
+      7、最后根据j是否等于 end，如果相等的话就找到了，返回找到时的第一个字符，在查找
+字符串中的第一个位置i;
+        如果没有找到，返回-1 
+
+

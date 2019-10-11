@@ -1,0 +1,119 @@
+package Homework3;
+
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+
+import org.apache.poi.hssf.usermodel.HSSFCell;
+import org.apache.poi.hssf.usermodel.HSSFRow;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+
+public class Main {
+	//读取所有学生成绩单中期末成绩
+	public static void readExcel(double[] arr){
+		try{
+			
+			FileInputStream  in = new FileInputStream("F:\\大二上\\TheSeconedNote\\java\\雪梨作业\\三\\实验一\\成绩单.xls");
+			HSSFWorkbook workbook = new HSSFWorkbook(in);
+			HSSFSheet sheet = workbook.getSheetAt(0);//第一张表
+			HSSFRow row;
+			HSSFCell cell;
+			for(int i=0;i<53;i++)
+			{
+				row = sheet.getRow(i+1);//得到工作表中第一行的引用，第一行的索引是0
+				cell = row.getCell(6); //得到某一行的第一个单元格，单元格的索引也是从0开始
+				//System.out.println(cell.getNumericCellValue());
+				arr[i]=cell.getNumericCellValue();
+			}
+			in.close();
+		}catch (Exception e) {//上面程序正确时，不会执行此处代码
+	        System.out.println("出错了！");
+	        e.printStackTrace();
+	}
+
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double[] arr=new double[53];
+		
+		//读取数据
+		readExcel(arr);
+		
+		//处理数据
+		double max=arr[0],min=arr[0],sum=arr[0];
+		int excellent=0,well=0,medium=0,pass=0,fail=0;
+		for (int i = 1; i < arr.length; i++) {
+			if(arr[i]<60)
+			{
+				fail++;
+			}else if(arr[i]<70)
+			{
+				pass++;
+			}else if(arr[i]<80)
+			{
+				medium++;
+			}else if(arr[i]<90)
+			{
+				well++;
+			}else if(arr[i]<=100)
+			{
+				excellent++;
+			}
+			if(max<arr[i])
+			{
+				max=arr[i];
+			}
+			if(min>arr[i])
+			{
+				min=arr[i];
+			}
+			sum+=arr[i];
+		}
+		System.out.println("max:"+max+"   min:"+min+"   平均数："+String.format("%.2f",sum/arr.length));
+	
+	
+	//写入数据
+	try{
+		FileInputStream in = new FileInputStream("F:\\大二上\\TheSeconedNote\\java\\雪梨作业\\三\\实验一\\成绩分析.xls");
+		HSSFWorkbook wb = new HSSFWorkbook(in);
+		HSSFSheet sheet = wb.getSheetAt(0);// 获得excel中第一个工作页对象，索引从0开始
+		HSSFRow row1 = sheet.createRow(1);// 创建工作表中一行，索引从0开始
+		HSSFCell cell1_1 = row1.createCell(2);
+		cell1_1.setCellValue(excellent);
+		HSSFCell cell1_2 = row1.createCell(3);
+		cell1_2.setCellValue(well);
+		HSSFCell cell1_3 = row1.createCell(4);
+		cell1_3.setCellValue(medium);
+		HSSFCell cell1_4 = row1.createCell(5);
+		cell1_4.setCellValue(pass);
+		HSSFCell cell1_5 = row1.createCell(6);
+		cell1_5.setCellValue(fail);
+		
+		HSSFRow row11 = sheet.createRow(2);// 创建工作表中一行，索引从0开始
+		//HSSFCell cell2_1 = row11.createCell(2);
+		//cell2_1.setCellValue(String.format("%.2f",excellent/arr.length/100));
+		System.out.println(String.format("%.2f",excellent/arr.length/100)+"%");
+//		HSSFCell cell2_2 = row11.createCell(3);
+//		cell2_2.setCellValue(String.format("%.2f",well/arr.length/100));
+//		HSSFCell cell2_3 = row11.createCell(4);
+//		cell2_3.setCellValue(String.format("%.2f",medium/arr.length/100));
+//		HSSFCell cell2_4 = row11.createCell(5);
+//		cell2_4.setCellValue(String.format("%.2f",pass/arr.length/100));
+//		HSSFCell cell2_5 = row11.createCell(6);
+//		cell2_5.setCellValue(String.format("%.2f",fail/arr.length/100));
+		
+		FileOutputStream out = new FileOutputStream("F:\\大二上\\TheSeconedNote\\java\\雪梨作业\\三\\实验一\\成绩分析.xls");
+		wb.write(out);
+		in.close();
+		out.close();
+
+	}catch (Exception e) {
+		// 上面程序正确时，不会执行此处代码
+		System.out.println("出错了！");
+		e.printStackTrace();
+	}
+
+
+	}
+}

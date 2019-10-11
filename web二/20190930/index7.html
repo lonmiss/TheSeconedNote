@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    var str="no zuo no die";
+    var arr=str.split(" ");
+    arr.forEach(function (val,index,arr) {
+        //val[0]
+        var big=val.charAt().toUpperCase();
+        // //arr[index][0]=big;
+        // val[0]=big;  不行
+        arr[index]=big+arr[index].slice(1);
+    })
+    console.log(arr);
+</script>
+</html>
