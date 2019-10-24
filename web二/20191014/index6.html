@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button id="stop">停止延迟进行</button>
+</body>
+<script>
+    var intervalID=setTimeout(function(){
+        alert("白维扬在哪呢？");
+    },10000);//设置时间的延迟,延迟时间的单位是毫秒
+
+
+    var stop=document.getElementById("stop");
+    stop.onclick=function () {
+        clearTimeout(intervalID);//清除延迟
+    };
+    //定时执行
+    var intervalId=setInterval(callback,3000);
+    function callback() {
+        console.log("在厕所呢，还没出来呢~")
+    }
+</script>
+</html>

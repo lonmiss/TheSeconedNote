@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="count">0</p>
+    <button id="start">开始计数</button>
+    <button id="stop">结束计时</button>
+</body>
+<script>
+    var count=document.getElementById("count");
+    var start=document.getElementById("start");
+    var stop=document.getElementById("stop");
+
+    var intervalId=0;
+    var countNum=0;
+    start.onclick=function () {
+        intervalId=setInterval(function () {
+            countNum+=1;
+            count.innerHTML=countNum;
+        },1000)
+    };
+    stop.onclick=function () {
+        clearInterval(intervalId);
+    }
+</script>
+</html>

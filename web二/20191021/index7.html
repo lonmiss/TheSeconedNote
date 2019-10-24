@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    这是index7.html页面
+</body>
+<script>
+    var search=window.location.search;//在url中查找出来的（？后面的内容）
+    search=search.slice(1);//选取第一位到最后
+    var arr=search.split("&");
+    var argObj={};
+    for (var i = 0; i < arr.length; i++) {
+        var argArr = arr[i].split("=");
+        argObj[argArr[0]]=argArr[1];//把数据分隔开，添加对象里边去
+    }
+    console.log(argObj);
+</script>
+</html>

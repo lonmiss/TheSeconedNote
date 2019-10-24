@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 id="timer"></h1>
+</body>
+<script>
+    //动态的得到时间
+    var timer=document.getElementById("timer");
+    var intervalId=setInterval(function () {
+        var date1=new Date();
+        var hour=date1.getHours();
+        var min=date1.getMinutes();
+        var second=date1.getSeconds();
+        timer.innerHTML=hour+":"+min+":"+second;
+    },1000);
+</script>
+</html>

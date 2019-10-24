@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    var Movie1={
+        movieName:"007",
+        movieType:"动作类",
+        rating:"8.0",
+        showTime:["8:00","12:00","16:00"],
+        getNextShow:function(){
+            var timer=10;
+            for (var i = 0; i < this.showTime.length; i++) {
+                if(parseInt(this.showTime[i]) > timer){
+                    //console.log()
+                    return this.showTime[i];
+                    break;
+                }
+            }
+        }
+    };
+    var Movie2={
+        movieName:"指环王",
+        movieType:"冒险类",
+        rating:"8.1",
+        showTime:["8:00","16:00","18:00"],
+    };
+    console.log(Movie1.getNextShow());
+</script>
+</html>

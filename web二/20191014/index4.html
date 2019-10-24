@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2 id="name"></h2>
+    <button id="btn">计算</button>
+</body>
+<script>
+    //var pr=prompt("请输入姓名");
+    // var name=document.getElementById("name");
+    // name.innerHTML=pr;
+    /*
+        在输入框中输入算术运算式
+        。点击确定时。将运算式结果用alert
+        x显示
+     */
+    var shizi=prompt("请输入运算式","0");
+    var name=document.getElementById("name");
+    var btn=document.getElementById("btn");
+    btn.onclick=function () {
+        alert(eval(shizi));
+    }
+</script>
+</html>

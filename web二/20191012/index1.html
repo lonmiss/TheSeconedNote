@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    var BWY={
+        useName:"白维扬",
+        age:20,
+        height:"177",
+        say:function()
+        {
+            console.log("我是渣男吗？没错，谁也没你渣！");
+        }
+    };
+    var sName=BWY.useName;
+    var sAge=BWY["age"];
+    BWY.say();
+    console.log(sName);
+    console.log(sAge);
+    var attarName="height";
+    console.log(BWY.attarName);//undefine
+    console.log(BWY[attarName]);//177
+    /*
+        对象.属性   那属性是字面值，直接查找该属性
+        在对象中是否存在，如果不存在该属性，得到的是undefined
+     */
+    /*添加属性、修改属性*/
+    BWY.wight="100kg";
+    BWY.height="180";
+</script>
+</html>

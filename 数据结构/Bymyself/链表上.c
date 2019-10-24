@@ -7,10 +7,10 @@ typedef struct Node
 	struct Node * next;
 }Node;
 
-/*1¡¢ÔÚO£¨1£©Ê±¼äÉ¾³ıÁ´±í½Úµã 
-	¸ø¶¨Á´±íµÄÍ·Ö¸ÕëºÍÒ»¸ö½ÚµãÖ¸Õë£¬
-	ÔÚO£¨1£© Ê±¼äÉ¾³ı¸Ã½Úµã~assertµÄ×÷ÓÃÊÇÏÖ¼ÆËã±í´ïÊ½ expression £¬Èç¹ûÆäÖµÎª¼Ù£¨¼´Îª0£©£¬
-	ÄÇÃ´ËüÏÈÏòstderr´òÓ¡Ò»Ìõ³ö´íĞÅÏ¢£¬È»ºóÍ¨¹ıµ÷ÓÃ abort À´ÖÕÖ¹³ÌĞòÔËĞĞ 
+/*1ã€åœ¨Oï¼ˆ1ï¼‰æ—¶é—´åˆ é™¤é“¾è¡¨èŠ‚ç‚¹ 
+	ç»™å®šé“¾è¡¨çš„å¤´æŒ‡é’ˆå’Œä¸€ä¸ªèŠ‚ç‚¹æŒ‡é’ˆï¼Œ
+	åœ¨Oï¼ˆ1ï¼‰ æ—¶é—´åˆ é™¤è¯¥èŠ‚ç‚¹~assertçš„ä½œç”¨æ˜¯ç°è®¡ç®—è¡¨è¾¾å¼ expression ï¼Œå¦‚æœå…¶å€¼ä¸ºå‡ï¼ˆå³ä¸º0ï¼‰ï¼Œ
+	é‚£ä¹ˆå®ƒå…ˆå‘stderræ‰“å°ä¸€æ¡å‡ºé”™ä¿¡æ¯ï¼Œç„¶åé€šè¿‡è°ƒç”¨ abort æ¥ç»ˆæ­¢ç¨‹åºè¿è¡Œ 
 */
 
 //void DeletRandomNode(Node *cur)
@@ -23,9 +23,9 @@ typedef struct Node
 //} 
 
 /*
-µ¥Á´±íµÄ×ªÖÃ£ºÊäÈëÒ»¸öµ¥ÏòÁ´±í£¬Êä³öÄæĞò·´×ªºóµÄÁ´±í
-	Á´±íµÄ×ªÖÃÊÇÒ»¸öºÜ³£¼û¡¢ºÜ»ù´¡µÄÊı¾İ½á¹¹ÌâÁË£¬·Çµİ¹éµÄËã·¨ºÜ¼òµ¥£¬ÓÃ
-	Èı¸öÁÙÊ±Ö¸Õëpre¡¢head¡¢nextÔÚÁ´±íÉÏÑ­»·Ò»±é¼´¿É 
+å•é“¾è¡¨çš„è½¬ç½®ï¼šè¾“å…¥ä¸€ä¸ªå•å‘é“¾è¡¨ï¼Œè¾“å‡ºé€†åºåè½¬åçš„é“¾è¡¨
+	é“¾è¡¨çš„è½¬ç½®æ˜¯ä¸€ä¸ªå¾ˆå¸¸è§ã€å¾ˆåŸºç¡€çš„æ•°æ®ç»“æ„é¢˜äº†ï¼Œéé€’å½’çš„ç®—æ³•å¾ˆç®€å•ï¼Œç”¨
+	ä¸‰ä¸ªä¸´æ—¶æŒ‡é’ˆpreã€headã€nextåœ¨é“¾è¡¨ä¸Šå¾ªç¯ä¸€éå³å¯ 
 */
 Node* reverseByLoop(Node *head)
 {
@@ -46,7 +46,7 @@ Node* reverseByLoop(Node *head)
 	return pre;
 } 
 
-// ´òÓ¡Á´±í
+// æ‰“å°é“¾è¡¨
 void printList(Node * head)
 {
 	for(;head!=NULL;head=head->next)
@@ -55,7 +55,7 @@ void printList(Node * head)
 	}
 	printf("\n");
 } 
-// Á´±í³¤¶È
+// é“¾è¡¨é•¿åº¦
 int sizeList(Node * head)
 {
 	int n;
@@ -65,7 +65,7 @@ int sizeList(Node * head)
 	}
 	return n;
 } 
-// ±³ºó²åÈëÊı¾İ
+// èƒŒåæ’å…¥æ•°æ®
 void pushBackList(Node ** pList,int data)
 {
 	Node * newNode=(Node *)malloc(sizeof(Node));
@@ -73,7 +73,7 @@ void pushBackList(Node ** pList,int data)
 	newNode->next=NULL;
 	if(*pList==NULL)
 	{
-		*pList=newNode;//ÅĞ¶ÏÁ´±íÊÇ·ñÎª¿Õ 
+		*pList=newNode;//åˆ¤æ–­é“¾è¡¨æ˜¯å¦ä¸ºç©º 
 	}else
 	{
 		Node *head=*pList;
@@ -100,7 +100,7 @@ int main(void)
 		
 		--------------------------------
 		Process exited after 0.3196 seconds with return value 0
-		Çë°´ÈÎÒâ¼ü¼ÌĞø. . .
+		è¯·æŒ‰ä»»æ„é”®ç»§ç»­. . .
 
 	*/
 	return 0;

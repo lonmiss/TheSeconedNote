@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    //构造函数的特有方法
+    function CreateMovie(movieName,movieType,rating,showTime) {
+        this.movieName=movieName;
+        this.movieType=movieType;
+        this.rating=rating;
+        this.showTime=showTime;
+        this.getNextShow=function () {
+            var timer=10;
+            for (var i = 0; i <this.showTime.length ; i++) {
+                if(parseInt(this.showTime[i]>timer)){
+                    return this.showTime[i];
+                    break;
+                }
+            }
+        }
+    }
+    var movie1=new CreateMovie("007","动作片","8.0",["9:00","12:00","16:00"]);
+    var movie2=new CreateMovie("指环王","冒险片","8.1",["10:00","14:00","18:00"]);
+    console.log(movie1);
+    console.log(movie2);
+</script>
+</html>

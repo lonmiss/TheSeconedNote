@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function CreateArg(search) {
+        var search=search.slice(1);
+        var argArr=search.split("&");
+        for (var i = 0; i < argArr.length; i++) {
+            var arr1=argArr[i].split("=");
+            this[arr1[0]]=arr1[1];
+        }
+    }
+    var argObj=new CreateArg(location.search);
+    console.log(argObj);
+</script>
+</html>

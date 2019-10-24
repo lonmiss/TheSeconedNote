@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    var BWY={
+        useName:"白维扬",
+        age:20,
+        height:"177",
+        say:function()
+        {
+            console.log(this);
+            this.age=99;
+            this.weight=90;
+            console.log("我是渣男吗？没错，谁也没你渣！");
+            /*
+                在对象中定义的方法内部，this指向当前对象
+            */
+        }
+    };
+    BWY.say();
+    // console.log(BWY.useName);
+    // delete BWY.useName;
+    // console.log(BWY.useName);//undefined
+    for(var key in BWY){
+        if(BWY[key]==BWY.age)
+        {
+            BWY[key]=23;
+        }
+        console.log(key+" : "+BWY[key]);
+    }
+    /*
+
+    * */
+</script>
+</html>

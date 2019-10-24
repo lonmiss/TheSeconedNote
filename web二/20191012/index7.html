@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    /*
+        定义一个构造函数createDesk
+        包含属性：color weight height width
+        包含方法：showColor输出桌子的颜色
+     */
+    function createDesk(color,weight,height,width){
+        this.color=color;
+        this.weight=weight;
+        this.height=height;
+        this.width=width;
+        this.showColor=function () {
+            console.log(this.color);
+        }
+    }
+    var desk1=new createDesk("blue","20kg","76cm","80cm^2");
+    console.log(desk1);
+    desk1.showColor();
+</script>
+</html>

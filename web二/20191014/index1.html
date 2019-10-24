@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+    //怎么得到日期对象
+    var date1=new Date();
+    console.log(date1.toLocaleDateString());//2019/10/14
+    var year=date1.getFullYear();
+    //alert(year);
+    var month=date1.getMonth()+1;
+    /*
+        getMonth()得到的结果是0~11；
+     */
+    var currentDate=date1.getDate();
+    console.log(year,month);//2019 9
+    console.log(year,month,currentDate);//2019 10 14
+
+    var currentDay=date1.getDay();
+    //alert(currentDay);// 1
+    var days=["周日","周一","周二","周三","周四","周五","周六"];
+    //alert(days[currentDay]);
+    /*
+        getDay()取值范围0~6，第一天为周日
+     */
+    var hour=date1.getHours();
+    var minute=date1.getMinutes();
+    var second=date1.getSeconds();
+    console.log(hour,minute,second);
+</script>
+</html>

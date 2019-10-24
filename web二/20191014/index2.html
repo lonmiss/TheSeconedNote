@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="timer"></p>
+    <button id="btn">获取当前时间按钮</button>
+</body>
+<script>
+
+    /*
+        当点击btn按钮时，设置p标签内部内容
+        当前时间，格式为2019-10-14
+     */
+    var btn=document.getElementById("btn");
+    var timer=document.getElementById("timer");
+    // function button() {
+    //     var date1=new Date();
+    //     var year=date1.getFullYear();
+    //     var month=date1.getMonth()+1;
+    //     var Cday=date1.getDate();
+    //     var hour=date1.getHours();
+    //     var min=date1.getMinutes();
+    //     var second=date1.getSeconds();
+    //     var s1=year+"-"+month+"-"+Cday+"    "+hour+":"+min+":"+second;
+    //     timer.innerHTML=s1;
+    // }
+    btn.onclick=function () {
+        var date1=new Date();
+        var year=date1.getFullYear();
+        var month=date1.getMonth()+1;
+        var Cday=date1.getDate();
+        var hour=date1.getHours();
+        var min=date1.getMinutes();
+        var second=date1.getSeconds();
+        var s1=year+"-"+month+"-"+Cday+"    "+hour+":"+min+":"+second;
+        timer.innerHTML=s1;
+    }
+</script>
+</html>

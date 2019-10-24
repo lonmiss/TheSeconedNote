@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        table{
+            margin: 0 auto;
+        }
+        #name{
+            height:60px;
+            width: 600px;
+            margin: 0 auto;
+            border: dotted #121212 1px;
+            text-align: center;
+            font-family: '微软雅黑';
+            font-size: 36px;
+            font-style: italic;
+            font-weight: bolder;
+            color: aqua;
+        }
+        #button>button{
+            height: 40px;
+            width: 40px ;
+            border: lime solid 2px;
+            margin: 0 auto;
+            text-align: center;
+            align-self: center;
+            position: relative;
+            left: 290px;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <td id="name" value="姓名">姓名</td>
+    </tr>
+    <tr>
+        <td id="button" ><button type="button" onclick="button(this)">按钮</button></td>
+    </tr>
+
+</table>
+
+</body>
+<script type="text/javascript">
+    var arr=['张漂亮','李努力','宋开心','王可爱'];
+    var num=parseInt(Math.random()*10)%4;
+    function button(which)
+    {
+        var num1;
+        num1=parseInt(Math.random()*10)%4;
+        while(num1==num)
+        {
+            num1=parseInt(Math.random()*10)%4;
+        }
+        num=num1;
+        document.getElementById("name").innerHTML =arr[num];
+    }
+</script>
+</html>

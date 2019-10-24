@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    /*
+        用户名、密码用;分隔
+        验证输入的用户名密码是否为 admin 123
+     */
+    var inputContent=prompt("请输入用户名密码");
+    var arr=inputContent.split(";");
+    if(arr[0]=="admin"&&arr[1]=="123"){
+        alert("登陆成功");
+    }else{
+        alert("登录失败");
+    }
+</script>
+</html>

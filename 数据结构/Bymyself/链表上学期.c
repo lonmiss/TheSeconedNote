@@ -109,9 +109,11 @@ Node * merge(Node ** pL1, Node ** pL2) {
 }
 int main(void) {
     Node * l1 = NULL, * l2 = NULL, * l3 = NULL;
-    pushBackList(&l1, 2); pushBackList(&l1, 4);
+    pushBackList(&l1, 2);
+    pushBackList(&l1, 4);
     pushBackList(&l1, 6);
-    pushBackList(&l2, 1); pushBackList(&l2, 3);
+    pushBackList(&l2, 1); 
+    pushBackList(&l2, 3);
     pushBackList(&l2, 9);
     l3 = merge(&l1, &l2);
     printList(l3);

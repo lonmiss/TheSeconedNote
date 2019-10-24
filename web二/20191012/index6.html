@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function Student(userName,age) {
+        this.userName=userName;
+        this.age=age;
+        this.showAge=function(){
+            /*
+                在定义的对象上的方法内部
+                this指代生成当前对象
+             */
+            console.log(this.age);
+        }
+    }
+    Student BWY=new Student("白维扬",99);
+
+</script>
+</html>

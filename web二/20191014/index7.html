@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button id="stop">清除定时执行</button>
+</body>
+<script>
+    var intervallID=setInterval(callback,3000);
+    function callback() {
+        console.log((new Date()).toDateString());
+    }
+    var stop=document.getElementById("stop");
+    stop.onclick=function () {
+        clearInterval(intervallID);
+    }
+</script>
+</html>

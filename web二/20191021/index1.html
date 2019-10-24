@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button id="open">打开新窗口</button>
+    <button id="close">关闭窗口</button>
+</body>
+<script>
+    var btnObj=document.getElementById("open");
+    var btnObj1=document.getElementById("close");
+    btnObj.onclick=function () {
+        //window.open("http://www.baidu.com","width=200px.height=200px,left=500px,top=200px");
+        window.open("newHtml.html","_blank","width=200px.height=200px,left=500px,top=200px");
+    };
+    btnObj1.onclick=function () {
+        window.close("newHtml.html");
+    }
+</script>
+</html>
