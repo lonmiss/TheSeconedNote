@@ -5,7 +5,10 @@ public class Triangle {
     private Segment Second_S;
 
     public Triangle(){
+        this.First_S=new Segment(new Point(0,0),new Point(0,3));
+        this.Second_S=new Segment(new Point(0,0),new Point(4,0));
     };
+
     public Triangle(Segment s1,Segment s2){
         First_S=s1;
         Second_S=s2;

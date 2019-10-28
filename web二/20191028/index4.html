@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul id="newList">
+        <li>数据结构</li>
+        <li>计算机组成原理</li>
+        <li>四级</li>
+    </ul>
+</body>
+<script>
+    var newList=document.getElementById("newList");
+    console.log(newList.childNodes);
+    console.log(newList.childNodes.length);
+    console.log(newList.children);
+    for (var i = 0; i < newList.children.length; i++) {
+        newList[i].innerText='abc';
+    }
+</script>
+</html>

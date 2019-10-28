@@ -1,0 +1,39 @@
+package ZhengW;
+
+public class test {
+	public static void main(String[] args) {
+	point a=new point();
+	point b=new point();
+	point c=new point();
+	
+	line m=new line();
+	line n=new line();
+	
+	a.setX(1);
+	a.setY(0);
+	
+	b.setX(0);
+	b.setY(1);
+	
+	c.setX(0);
+	c.setY(0);
+	
+	m.setA(a);
+	m.setB(b);
+	
+	n.setA(a);
+	n.setA(c);
+	
+	triangle1 tri1=new triangle1(a,b,c);
+	double C=tri1.getC(a,b,c);
+	System.out.println(C);
+	triangle1 tri2=new triangle1(m,n);
+	
+    C=tri2.getC(m,n);
+	System.out.println(C);
+	triangle1 tri3=new triangle1();
+	C=tri3.getC();
+	System.out.println(C);
+	}
+}
+

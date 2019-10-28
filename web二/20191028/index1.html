@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--childNodes类数组集合 head body script-->
+<!--firstChild-->
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #container{
+            height:200px;
+            width:200px;
+            background-color: lime;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+    <p id="p1"></p>
+</body>
+<script>
+    /*
+        在对像的方法内部，this指向当前对象
+        DOM对象的事件的回调函数内部，this指向当前对象
+     */
+    var contianer=document.getElementById("container");
+    var p1=document.getElementById("p1");
+    console.log(contianer);
+    contianer.onclick=function () {
+        console.log(contianer.id);
+        p1.innerHTML=this.id;
+    }
+</script>
+</html>

@@ -1,0 +1,7 @@
+1、C
+2、String、Array、Math、Date
+3、
+    var today=new Date();
+    console.log(today.getMonth()+1);
+4、D
+5、D

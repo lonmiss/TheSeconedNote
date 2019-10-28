@@ -1,0 +1,18 @@
+package W1024work;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Dian a1=new Dian(0,0);
+		Dian a2=new Dian(0,3);
+		Dian a3=new Dian(0,2);
+
+		
+		Xian x1=new Xian(a1,a2);
+		Xian x2=new Xian(a1,a3);
+		
+		Jiao j1=new Jiao(x1,x2);
+		System.out.println(j1.meter());
+	}
+
+}

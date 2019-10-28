@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button id="btn">输出</button>
+    <p id="cnt"></p>
+
+</body>
+<script>
+    var s3;
+    function getNowTime(str) {
+        var data=new Date();
+        var year=data.getFullYear();
+        var month=data.getMonth()+1;
+        var day=data.getDate();
+        var s1,s2,t;
+        t=str[0];
+        var cnt1=0,cnt2=1,cnt3=0;
+        var i;
+        for (i = 1; i <str.length ; i++) {
+            cnt1++;
+            if(str[i]!=t){
+                s1=str[i];
+                t=str[i+1];
+                break;
+            }
+        }
+        for ( i+=1 ;i <str.length; i++) {
+            cnt2++;
+            //console.log("cnt2="+cnt2+"   i="+i);
+            if(str[i]!=t){
+                s2=str[i];
+                break;
+            }
+        }
+        console.log(s1+"  "+s2);
+        cnt3=str.length-(cnt1+cnt2);
+        console.log(cnt3);
+        year%=Math.pow(10,cnt1);
+        month%=Math.pow(10,cnt2);
+        day%=Math.pow(10,cnt3);
+        s3=""+year+s1+month+s2+day;
+        document.getElementById("cnt").innerHTML=s3;
+    }
+    var inputChar = prompt("请请输入你想要的日期格式：");
+    inputChar = inputChar.substr(0);
+    var btn=document.getElementById("btn");
+    btn.onclick=function(){
+        getNowTime(inputChar);//0000!00#00
+    };
+</script>
+</html>

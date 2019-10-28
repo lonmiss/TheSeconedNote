@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            height:100px;
+            width: 200px;
+            float: left;
+            margin-left: 20px;
+            background-color: darkgreen;
+            text-align-all:center;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1" class="bg">
+        div1
+    </div>
+    <div id="div2" class="bg">
+        div2
+    </div>
+    <div id="div3" class="bg">
+        div3
+    </div>
+</body>
+<script>
+     var divList=document.getElementsByTagName("div");
+     console.log(divList);
+     for (var i = 0; i <divList.length ; i++) {
+         console.log(divList[i].id);
+     }
+     var divList1=document.getElementsByClassName("bg");
+     console.log(divList1);
+     for (var i = 0; i < divList1.length; i++) {
+         console.log(divList1[i]);
+     }
+</script>
+</html>

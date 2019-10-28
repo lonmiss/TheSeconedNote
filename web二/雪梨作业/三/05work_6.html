@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    var chapterList = {
+        list: [
+
+            {id: 2, chapterName: "文章2"},
+
+            {id: 1, chapterName: "文章1"},
+
+            {id: 4, chapterName: "文章4"},
+
+            {id: 3, chapterName: "文章3"}
+        ]
+    };
+    var idT;
+    var chapterNameT;
+    for (var i = 0; i <chapterList.list.length-1 ; i++) {
+        for (var j = 0; j <chapterList.list.length-i-1 ; j++) {
+            if(chapterList.list[j].id>chapterList.list[j+1].id){
+                idT=chapterList.list[j].id;
+                chapterNameT=chapterList.list[j].chapterName;
+
+                chapterList.list[j].id=chapterList.list[j+1].id;
+                chapterList.list[j].chapterName=chapterList.list[j+1].chapterName;
+
+                chapterList.list[j+1].id=idT;
+                chapterList.list[j+1].chapterName=chapterNameT;
+            }
+        }
+    }
+    console.log(chapterList);
+</script>
+</html>

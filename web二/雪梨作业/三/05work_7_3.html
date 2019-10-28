@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+function getNowTime(str) {
+    var data=new Date();
+    var year=data.getFullYear();
+    var month=data.getMonth()+1;
+    var day=data.getDate();
+    var s1,s2,t;
+    t=str[0];
+    var cnt1=0,cnt2=1,cnt3=1;
+    var i;
+    for (i = 1; i <str.length ; i++) {
+        cnt1++;
+        if(str[i]!=t){
+            s1=str[i];
+            t=str[i+1];
+            break;
+        }
+    }
+    i+=2;
+    for ( i ;i <str.length; i++) {
+        cnt2++;
+        if(str[i]!=t){
+            s2=str[i];
+            t=str[i+1];
+            break;
+        }
+    }
+    cnt3=str.length-(cnt1+cnt2+1);
+    year%=Math.pow(10,cnt1);
+    month%=Math.pow(10,cnt2);
+    day%=Math.pow(10,cnt3);
+    console.log(""+year+s1+month+s2+day);
+}
+getNowTime('YYYY-MM-DD');
+getNowTime('YY/MM/DD');
+</script>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table width="300px" height="300px" border="1" align="center">
+        <tr>
+            <td></td>
+            <td id="tdflag"></td>
+            <td></td>
+        </tr>
+        <tr id="trflag">
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+<script>
+    var tdDom=document.getElementById("tdflag");
+    var trDom=document.getElementById("trflag");
+    console.log(tdDom.previousSibling);//得到当前节点，前一个兄弟节点,previousSibling才包含空格、注释
+    console.log(tdDom.previousElementSibling);
+    tdDom.previousElementSibling.innerHTML="前一个";
+    tdDom.innerHTML="中间的";
+    tdDom.nextElementSibling.innerHTML="后一个";
+
+    /*
+        获取元素父节点，使用parentNode
+     */
+    tdDom.parentNode.style.color="red";
+</script>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function nowTime(s1) {
+        var data=new Date();
+        var year=data.getFullYear();
+        var month=data.getMonth()+1;
+        var day=data.getDate();
+        var str;
+        str=""+year+s1.slice(-3,-2)+month+s1.slice(-6,-5)+day;
+        //str=s1.slice(-3,-2);
+        console.log(str);
+    }
+    nowTime('YYYY-MM-DD');
+    nowTime('YY/MM/DD');
+</script>
+</html>

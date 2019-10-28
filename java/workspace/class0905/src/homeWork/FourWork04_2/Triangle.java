@@ -43,6 +43,15 @@ public class Triangle {
         return Math.sqrt(s2_x+s2_y);
     }
     public double Perimeter(){
-        return First_S.Segment_length()+Second_S.Segment_length()+Thirh_S();
+        double b1,b2,b3;
+        b1=First_S.Segment_length();
+        b2=Second_S.Segment_length();
+        b3=Thirh_S();
+        if((Math.abs(b1+b2)>b3)&&(Math.abs(b1+b3)>b2)&&(Math.abs(b2+b3)>b1)){
+            return b1+b2+b3;
+        }else{
+            System.out.println("三角形构建不合法。");
+            return 0;
+        }
     }
 }
