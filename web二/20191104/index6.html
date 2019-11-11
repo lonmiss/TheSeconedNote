@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>calculate </title>
+    <meta http-equiv = "Content-Type" content = "text/html;charaset = utf-8"/>
+    <style type="text/css">
+        body{
+            font:bolder 26px 楷体;
+
+        }
+        #result{
+            text-align:right;
+        }
+        table,td{
+            border:1px solid #C0C0C0;
+        }
+        td{
+            padding:10px;
+        }
+        button{
+            width:50px;
+            height:50px;
+        }
+    </style>
+</head>
+<body>
+<table id="tb1">
+    <tr>
+        <td colspan="3" id="result">0</td>
+        <td><button type="button" value="C">C</button></td>
+    </tr>
+    <tr>
+        <td><button type="button" value="1" onclick="showData(this);">1</button></td>
+        <td><button type="button" value="2">2</button></td>
+        <td><button type="button" value="3">3</button></td>
+        <td><button type="button" value="+">+</button></td>
+    </tr>
+    <tr>
+        <td><button type="button" value="4">4</button></td>
+        <td><button type="button" value="5">5</button></td>
+        <td><button type="button" value="6">6</button></td>
+        <td><button type="button" value="-">-</button></td>
+    </tr>
+    <tr>
+        <td><button type="button" value="7">7</button></td>
+        <td><button type="button" value="8">8</button></td>
+        <td><button type="button" value="9">9</button></td>
+        <td><button type="button" value="*">*</button></td>
+    </tr>
+    <tr>
+        <td><button type="button" value="0">0</button></td>
+        <td><button type="button" value=".">.</button></td>
+        <td><button type="button" value="=">=</button></td>
+        <td><button type="button" value="/">/</button></td>
+    </tr>
+
+</table>
+</body>
+<script>
+    var butList=document.getElementsByTagName("button");
+    var result=document.getElementById("result")
+    butList[0].onclick=function(){
+        result.innerHTML="";
+    }
+    for(var i=1;i<butList.length;i++)
+    {
+        var str="";
+        butList[i].onclick=function(){
+            if(result.innerHTML=="0")
+            {
+                result.innerHTML="";
+            }
+            if(this.innerHTML=='=')
+            {
+                document.getElementById("result").innerHTML=eval(str); 
+                str="";
+            }else{
+                document.getElementById("result").innerHTML+=this.innerHTML;
+                str+=this.innerHTML;
+            }
+            
+        }
+    }
+</script>
+</html>
+
+
+
+
+
+

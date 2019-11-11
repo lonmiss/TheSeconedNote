@@ -1,0 +1,6 @@
+package LWQ119;
+
+public interface Compere {
+    int compareTo(Graph a);
+}
+

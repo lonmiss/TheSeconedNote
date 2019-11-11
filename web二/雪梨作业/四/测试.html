@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul><h4>history对象可以访问到浏览器窗口的浏览历史</h4>
+        <li>back()   后退到上一个访问过的页面</li>
+        <li>forward() 前进到下一个访问过的页面</li>
+        <li>go(n)  跳转到某个访问过的页面</li>
+    </ul>
+    <a href="www.baidu.com">百度</a>
+    <p id="btn">后退</p>
+</body>
+<script>
+    var btn=document.getElementById("btn");
+    btn.onclick=function () {
+        window.history.go();
+    }
+</script>
+</html>

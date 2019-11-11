@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul id="list">
+        <li>香蕉</li>
+        <li class="bg">苹果</li>
+        <li>橙子</li>
+        <li class="bg">桑葚</li>
+        <li class="bg">西瓜</li>
+    </ul>
+</body>
+<script type="text/javascript">
+    /*根据ID属性值得到特定的网页元素对应的DOM对象*/
+    var list=document.getElementById("list");
+    document.write(list);
+    var arr=list.getElementsByTagName("li");
+    for (var i = 0; i < arr.length; i++) {
+        arr[i].innerHTML=arr[i].innerHTML+i;
+        console.log(arr[i]);
+    }
+    var arr1=list.getElementsByClassName("bg");
+    for (var i = 0; i <arr1.length ; i++) {
+        arr1[i].style.color="red";
+    }
+    console.log(arr1.parentNode.in);
+</script>
+</html>

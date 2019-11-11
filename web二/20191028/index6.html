@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="container">
+        <div id="first1" class="bg">1</div>
+        <div id="second" class="bg">2</div>
+        <div>3</div>
+        <div>4</div>
+        <div id="last">5</div>
+    </div>
+</body>
+<script>
+    /*
+        通过最后一个元素DOM对象得到container中的第一个元素DOM对象，设置元素内容为：第一个元素
+        尝试多种方法得到第一个div的DOM对象
+     */
+    var last=document.getElementById("last");
+    last.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.innerHTML="1第一个元素";
+
+    var divL=document.getElementById("container");
+    divL.children[0].innerHTML="2第一个元素";
+
+    for (var i = divL.children.length; i >=0 ; i--) {
+        if(i==0) {
+            divL.children[i].innerHTML="3第一个元素";
+        }
+    }
+
+    parentNode=last.parentNode;
+    var first=parentNode.firstElementChild;
+    console.log(first);
+
+    var first1=document.getElementById("first");
+    console.log(first1);
+    var first2=document.getElementsByTagName("div")[1];
+    console.log(first2);
+    var first3=document.getElementsByClassName("bg")[1];
+    console.log(first3);
+    var container=document.getElementById("container");
+    var first4=container.children[0];
+    console.log(first4);
+    var first5=container.firstElementChild;
+    console.log(first5);
+    var second=document.getElementById("second");
+    var first6=second.previousElementSibling;
+</script>
+</html>

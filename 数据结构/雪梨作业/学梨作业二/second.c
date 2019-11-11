@@ -58,6 +58,7 @@ void Sort(LinkList L)
 		p=q->next;
 		q=p;
 	}
+	
 	for(c=L->next;c;c=c->next)
 	{
 		printf("%c\n",c->data);

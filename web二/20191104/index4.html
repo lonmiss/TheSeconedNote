@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"、>
+    <title>tableDemo</title>
+    <style type="text/css">
+        td{
+            width: 100px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+<table border="1" id="tb1">
+    <tr>
+        <td align="center">
+            <button>删除本行1</button>
+        </td>
+        <td>
+
+        </td>
+        <td>
+
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <button>删除本行2</button>
+        </td>
+        <td>
+
+        </td>
+        <td>
+
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <button>删除本行3</button>
+        </td>
+        <td>
+
+        </td>
+        <td>
+
+        </td>
+    </tr>
+</table>
+</body>
+<script type="text/javascript">
+    /*
+        1.得到要操作的网页元素对应的DOM对象
+        2.进行事件绑定
+        3.触发事件时的具体DOM操作(网页元素结构修改，样式修改)
+    */
+    var btnList = document.getElementsByTagName("button");
+    var tb1 = document.getElementById("tb1");
+
+    for (var i = 0; i < btnList.length; i++) {
+        btnList[i].onclick = function(){
+            var trNode = this.parentNode.parentNode;
+            tb1.children[0].removeChild(trNode);
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,5 @@
+package LWQ119;
+
+public abstract class Graph {
+
+}

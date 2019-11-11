@@ -38,7 +38,7 @@ public class Demo {
 
          while ((str = bufferedReader.readLine()) != null) {
 
-            writer.write(str +"		2018011702"+"\r\n");
+            writer.write(str +"		2018011702"+" 李建民"+"\r\n");
             //写入数据是，通过字符连接+，在数据后面插入"		2018011702"，插入数据后面
 
          }

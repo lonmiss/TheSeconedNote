@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        img{
+            width: 100px;
+        }
+        .imgborder{
+            border: aqua solid 6px;
+        }
+        #imgargin{
+            margin-left: 200px;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <img src="../imgs/小雨不萌.jpg" alt="12">
+    <button id="btn1">添加边框</button>
+    <button id="btn2">取出边框</button>
+    <button id="btn3">添加外边距</button>
+    <button id="btn4">删除外边距</button>
+    <ul id="list">
+        <li>香蕉</li>
+        <li class="bg">苹果</li>
+        <li>橙子</li>
+        <li class="bg">桑葚</li>
+        <li class="bg">西瓜</li>
+    </ul>
+</body>
+<script>
+    var list=document.getElementById("list");
+    //list.innerHTML+="<h1>葡萄</h1>"
+    //innerText设置是DOM对象对应的网页元素标记内部的纯文本内容
+    //list.innerText="<h1>王晓奇</h1>"
+    //console.log(list.innerText);
+
+    //修改网页中标签中的属性
+    var imgList=document.getElementsByTagName("img");
+    imgList[0].onclick=function () {
+        console.log(this.getAttribute("src"));
+        this.setAttribute("src","../imgs/运算符.png");
+    };
+    var btn1=document.getElementById("btn1");
+    var btn2=document.getElementById("btn2");
+    btn1.onclick=function () {
+        this.previousElementSibling.setAttribute("class","imgborder");
+        this.setAttribute("class","imgborder");
+    };
+    btn2.onclick=function () {
+        //this.previousElementSibling.previousElementSibling.setAttribute("class","");
+        this.parentNode.firstElementChild.removeAttribute("class");
+        var isExist=this.parentNode.firstElementChild.hasAttribute("class");
+        console.log(isExist);
+        if(isExist){
+            this.parentNode.firstElementChild.removeAttribute("class");
+        }
+        else{
+            return;
+    }
+    };
+    var btn3=document.getElementById("btn3");
+    var btn4=document.getElementById("btn4");
+    btn3.onclick=function () {
+        this.parentNode.firstElementChild.setAttribute("id","imgargin");
+    };
+    btn4.onclick=function () {
+        this.parentNode.firstElementChild.removeAttribute("id");
+    }
+</script>
+</html>

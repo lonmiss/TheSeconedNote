@@ -13,7 +13,6 @@
 <fullyQualifiedTypeName name="org.apache.poi.hssf.usermodel.HSSFCell"/>
 <fullyQualifiedTypeName name="java.awt.BufferCapabilities"/>
 <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="W1024work.Jiao"/>
 <fullyQualifiedTypeName name="org.apache.commons.collections4.functors.IfClosure"/>
 <fullyQualifiedTypeName name="org.apache.poi.xdgf.usermodel.section.geometry.Ellipse"/>
@@ -23,8 +22,13 @@
 <fullyQualifiedTypeName name="W1024work.Xian"/>
 <fullyQualifiedTypeName name="java.lang.reflect.MalformedParameterizedTypeException"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="work4.jiao"/>
 <fullyQualifiedTypeName name="work4.line"/>
 <fullyQualifiedTypeName name="work4.point"/>
+<fullyQualifiedTypeName name="LWQ119.Compere"/>
+<fullyQualifiedTypeName name="org.openxmlformats.schemas.xpackage.x2006.digitalSignature.RelationshipReferenceDocument"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="LWQ119.Square"/>
+<fullyQualifiedTypeName name="LWQ119.Graph"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

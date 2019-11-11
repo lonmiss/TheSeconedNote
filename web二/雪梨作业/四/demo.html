@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2 id="cnt"></h2>
+    <button id="btn1">开始</button>
+    <button id="btn2">终止</button>
+    <button id="btn3">归零</button>
+</body>
+<script>
+    var cnt=document.getElementById("cnt");
+    var btn1=document.getElementById("btn1");
+    var btn2=document.getElementById("btn2");
+    var btn3=document.getElementById("btn3");
+    var a=0;
+    var btn11;
+    btn1.onclick=function () {
+        btn11=setInterval(s,100);
+        function s() {
+            cnt.innerHTML=a;
+            a++;
+        };};
+
+    btn2.onclick=function () {
+        clearInterval(btn11);
+    };
+    btn3.onclick=function () {
+        a=0;
+        cnt.innerText=a;
+    };
+</script>
+</html>

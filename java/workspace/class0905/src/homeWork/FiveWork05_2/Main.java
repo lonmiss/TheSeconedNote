@@ -50,5 +50,26 @@ public class Main {
             }
         }
         System.out.println("最大的正方形是："+ tS.toString());
+
+        //创建图形类数组,包括圆、长方形、正方形
+        Graphics[] GraphicsS=new Graphics[12];
+        for (int i = 0; i < 4; i++) {
+            GraphicsS[i]=new Circle();
+            GraphicsS[i]=arrC[i];
+
+            GraphicsS[i+4]=new Rectangle();
+            GraphicsS[i+4]=arrR[i];
+
+            GraphicsS[i+8]=new Square();
+            GraphicsS[i+8]=arrS[i];
+        }
+        Graphics cnt;
+        cnt=GraphicsS[0];
+        for (int i = 0; i <GraphicsS.length ; i++) {
+            if(cnt.compareTo(GraphicsS[i])<0){
+                cnt=GraphicsS[i];
+            }
+        }
+        System.out.println("最大图形面积是："+cnt.Area());
     }
 }

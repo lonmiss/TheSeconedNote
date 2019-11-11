@@ -1,0 +1,65 @@
+1、D
+2、B
+3、D
+4、666
+    setTimeout()——————延迟执行，开始的时候定义a=6,此时的代码没有执行完毕，
+    所以setTimeout()不会执行，后面的代码会执行，此时a变为66，然后执行alert(a);
+    显示66，然后在执行setTime()里面的函数，此时a变为666，弹出框，最后显示666
+
+5、
+      周期执行 ----- setInterval( )
+      重复执行，直到 clearInterval( ) 被调用或窗口被关闭
+      setInterval( code,interval )
+      code 为要周期执行的 JavaScript 代码；
+      interval 为周期执行的间隔时间，单位为毫秒
+      取消周期执行 clearInterval( )
+      clearInterval( id )
+      id 是 setInterval( ) 方法返回的数字
+
+      setInterval() 方法可按照指定的周期（以毫秒计）来调用函数或计算表达式。
+
+      setInterval() 方法会不停地调用函数，直到 clearInterval() 被调用或窗口被关闭。由 setInterval() 返回的 ID 值可用作 clearInterval() 方法的参数。
+
+      注意事项：
+      setInterval():在使用setInterval方法时，每一次启动都需要对setInterval方法返回的值做一个判断，判断是否是空值，
+      若不是空值，则要停止定时器并将值设为空，再重新启动，如果不进行判断并赋值，有可能会造成计时器循环调用，
+      在同等的时间内同时执行调用的代码，并会随着代码的运行时间增加而增加，导致功能无法实现，甚至占用过多资源而卡死奔溃。
+      因此在每一次使用setInterval方法时，都需要进行一次判断。
+      clearInterval()：clearInterval(id_of_setinterval)，参数是必须的，为setInterval返回的ID值
+6、
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button id="btn1">猜数字</button>
+    <button id="btn2">输出猜过的数字</button>
+</body>
+<script>
+    var btn1=document.getElementById("btn1");
+    var btn2=document.getElementById("btn2");
+    var a=parseInt(Math.random()*100);
+    var cnt;
+    var arr=new  Array(10);
+    btn1.onclick=function () {
+        for (var i = 0; i < 10; i++) {
+            cnt=prompt("请输入你猜的数字");
+            if(cnt<a){
+                alert("猜小了");
+            }else if(cnt>a){
+                alert("猜大了");
+            }else{
+                alert("恭喜你猜对啦");
+                break;
+            }
+            arr[i]=cnt;
+        }
+    };
+    btn2.onclick=function(){
+        console.log(arr);
+    };
+
+</script>
+</html>
