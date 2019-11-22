@@ -12,21 +12,31 @@
     var btn1=document.getElementById("btn1");
     var btn2=document.getElementById("btn2");
     var a=parseInt(Math.random()*100);
-    var cnt;
+    var cnt=0;
+    var num;
+    var flag=0;//判断是否重新进行判断
     var arr=new  Array();
     btn1.onclick=function () {
-        for (var i = 0; i < 10; i++) {
-            cnt=prompt("请输入你猜的数字");
-            if(cnt<a){
-                alert("猜小了");
-            }else if(cnt>a){
-                alert("猜大了");
-            }else{
-                alert("恭喜你猜对啦");
-                break;
-            }
-            arr[i]=cnt;
+        if(flag==1){
+            arr=new  Array();
+            cnt=0;
+            flag=0;
+            a=parseInt(Math.random()*100);
         }
+        if(cnt==10){
+            alert("游戏结束");
+            flag=1;
+        }
+        num=prompt("请输入你猜的数字");
+        if(num<a){
+            alert("猜小了");
+        }else if(num>a){
+            alert("猜大了");
+        }else{
+            alert("恭喜你猜对啦");
+            flag=1;
+        }
+        arr[cnt++]=num;
     };
     btn2.onclick=function(){
         console.log(arr);

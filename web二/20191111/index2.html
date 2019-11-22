@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <h1>标题</h1>
+        <a href="./图片切换/index.html" id="list">超链接</a>
+    </div>
+</body>
+<script>
+    /*
+        元素节点
+    * */
+    var list=document.getElementById("list");
+    var linkHref=list.getAttributeNode("href");
+    console.log(linkHref);
+    var textNode=list.firstChild;
+    console.log(textNode);
+
+    //nodeType属性是一个只读的属性
+    console.log(list.nodeType,linkHref.nodeType,textNode.nodeType);
+    console.log(list.nodeName,linkHref.nodeName,textNode.nodeName);
+    console.log(list.nodeValue,linkHref.nodeValue,textNode.nodeValue);
+</script>
+</html>

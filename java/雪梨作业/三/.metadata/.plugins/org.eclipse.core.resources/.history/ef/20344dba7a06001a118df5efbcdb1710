@@ -1,0 +1,40 @@
+package homeWork6;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.Writer;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+	}
+	
+		// TODO Auto-generated method stub
+//		try {
+//			FileReader fReader = new FileReader("F:\\employees.txt");
+//		    BufferedReader bufferedReader = new BufferedReader(fReader);
+//		    String s1;
+//		    s1=bufferedReader.readLine();
+//		    while (s1!=null) {
+//				System.out.println(s1);
+//				s1=bufferedReader.readLine();
+//			}
+//		    
+////			Writer writer = new FileWriter(new File("F:\\employees.txt"));
+////			String str;
+////			while ((str = bufferedReader.readLine()) != null) {
+////				writer.write(str + "\r\n");
+////			}
+//			bufferedReader.close();
+//			fReader.close();
+//			//writer.close();
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
+//	}
+
+}

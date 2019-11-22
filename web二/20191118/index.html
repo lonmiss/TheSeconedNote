@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            height:900px;
+            width: 2000px;
+            border:1px solid #829606;
+            margin:0 auto;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">按钮</button>
+    <button id="insertBefore">insertBefore</button>
+    <button id="appendChild">appendChild</button>
+    <div id="div">
+        <img src="../课堂文件/图片切换/images/0.jpg" alt="" id="img1">
+    </div>
+</body>
+<script>
+    var imgNode=document.createElement("img");
+    //凡是在网页元素中存在的标记都可以用这个方法创建
+    imgNode.src="../课堂文件/图片切换/images/1.jpg";
+
+    var insertBefore=document.getElementById("insertBefore");
+    //向已有的图片的前面加图片
+    var img1=document.getElementById("img1");
+    var img2=document.getElementsByTagName("img")[0];
+    //alert(img1==img2); //true
+    insertBefore.onclick=function (e) {
+        e.stopPropagation();//阻止父级元素不会连续被触发
+
+        var div=document.getElementById("div");
+        var img0=document.createElement("img");
+        img0.src="../课堂文件/图片切换/images/2.jpg";
+        div.insertBefore(img0,img1);
+    };
+
+    var appendChild=document.getElementById("appendChild");
+    appendChild.onclick=function () {
+        var imgNode1=document.createElement("img");
+        var container=document.getElementById("div");
+        imgNode1.src="../课堂文件/图片切换/images/3.jpg";
+        container.appendChild(imgNode1);
+    }
+
+    // var bodyNode=document.getElementsByTagName("body");
+    // bodyNode[0].appendChild(imgNode);
+    //document.body.appendChild(imgNode);
+    /*
+        parentNode.appendChild(childNode)
+        向parentNode节点对象标记内部最后的位置
+        添加childNode
+     */
+
+    // var divNode=document.createElement("div");
+    // document.body.appendChild(divNode);
+    // var btn=document.getElementById("btn");
+    // btn.onclick=function () {
+    //
+    //     divNode[0].appendChild(imgNode);
+    // };
+
+    var div=document.getElementById("div");
+    var btn=document.getElementById("btn");
+    btn.onclick=function () {
+        div.appendChild(imgNode);
+    }
+</script>
+</html>

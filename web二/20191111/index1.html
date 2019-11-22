@@ -1,0 +1,115 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>calculate </title>
+    <meta http-equiv = "Content-Type" content = "text/html;charaset = utf-8"/>
+    <style type="text/css">
+        body{
+            font:bolder 26px 楷体;
+
+        }
+        #result{
+            text-align:right;
+        }
+        table,td{
+            border:1px solid #C0C0C0;
+        }
+        td{
+            padding:10px;
+        }
+        button{
+            width:50px;
+            height:50px;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <td colspan="3" id="result">0</td>
+        <td><button type="button" value="C">C</button></td>
+    </tr>
+    <tr>
+        <td><button type="button" value="1" onclick="showData(this);">1</button></td>
+        <td><button type="button" value="2">2</button></td>
+        <td><button type="button" value="3">3</button></td>
+        <td><button type="button" value="+">+</button></td>
+    </tr>
+    <tr>
+        <td><button type="button" value="4">4</button></td>
+        <td><button type="button" value="5">5</button></td>
+        <td><button type="button" value="6">6</button></td>
+        <td><button type="button" value="-">-</button></td>
+    </tr>
+    <tr>
+        <td><button type="button" value="7">7</button></td>
+        <td><button type="button" value="8">8</button></td>
+        <td><button type="button" value="9">9</button></td>
+        <td><button type="button" value="*">*</button></td>
+    </tr>
+    <tr>
+        <td><button type="button" value="0">0</button></td>
+        <td><button type="button" value=".">.</button></td>
+        <td><button type="button" value="=">=</button></td>
+        <td><button type="button" value="/">/</button></td>
+    </tr>
+
+</table>
+</body>
+<script>
+    /*
+        获取DOM元素绑定点击事件
+    */
+    var result=document.getElementById("result");
+    var btnList=document.getElementsByTagName("button");
+    var Str="";
+    for (var i = 0; i < btnList.length; i++) {
+        btnList[i].onclick=function(){
+            //获取标签里的属性
+            /*在DOM对象事件的回调函数中，this指向当前触发事件的DOM对象*/
+            //console.log(this.innerHTML);
+            var btnType=this.innerHTML;
+            switch(btnType){
+                case '=':
+                    calculate();
+                    break;
+                case 'C':
+                    clearResult();
+                    break;
+                default:
+                    showString(this.innerHTML);
+                    break;
+            }
+        }
+    }
+    function showString(a) {
+        Str+=a;
+        result.innerHTML=Str;
+    }
+    function clearResult() {
+        result.innerHTML="";
+        Str="";
+    }
+    function calculate() {
+        Str=eval(Str);
+        result.innerHTML=Str;
+    }
+    var str="";
+    function showStr(val){
+        str=result.innerHTML;
+        if(str==0){
+            str=val;
+        }else{
+            str+=val;
+        }
+        result.innerHTML=str;
+    }
+    function clearResult1() {
+        result.innerHTML="0";
+    }
+    function calculate() {
+        result.innerHTML=eval(result.innerHTML);
+    }
+</script>
+</html>

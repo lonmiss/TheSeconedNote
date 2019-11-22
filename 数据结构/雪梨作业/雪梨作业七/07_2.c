@@ -51,11 +51,11 @@ void PrintMatrix(TSMatrix M){
         {
             if(M.data[k].i==i&&M.data[k].j==j)
             {
-                printf("%d	",M.data[k].e);
+                printf("%2d	",M.data[k].e);
                 k++;
             }else
             {
-                printf("%d	",0);
+                printf("%2d	",0);
             }
         }
         printf("\n");

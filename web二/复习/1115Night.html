@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--<div id="main"><img src="logo.jpg" name="logo"/></div>-->
+    <p id="nowTime"></p>
+    <button id="btn1">停止</button>
+    <button id="btn2">继续</button>
+</body>
+<script>
+
+    var nowTime=document.getElementById("nowTime");
+    var flag;
+    flag=setInterval(function () {
+        var str=new Date();
+        nowTime.innerHTML=str.getHours()+":"+str.getMinutes()+":"+str.getSeconds();
+    },1000);
+    btn1.onclick=function () {
+        clearInterval(flag);
+    };
+    btn2.onclick=function () {
+        flag=setInterval(function () {
+            var str=new Date();
+            nowTime.innerHTML=str.getHours()+":"+str.getMinutes()+":"+str.getSeconds();
+        },1000);
+    }
+    // var arr=new Array();
+    // var cnt=0;
+    // for (var i = 0; i <10; i++) {
+    //     while(!(cnt>=10&&cnt<=100))
+    //     {
+    //         cnt=Math.random();
+    //         cnt=parseInt(cnt*100);
+    //     }
+    //     arr[i]=cnt;
+    //     cnt=0;
+    // }
+    // console.log(arr);
+
+
+    //var a = new Object( ); a.value = 1; alert(a);
+
+    // alert(undefined==null);
+    // alert(2== true);//flash
+    // alert(0=='');
+    // alert([]==false);
+
+    // var count=2;
+    // var User = {
+    //     count: 1,
+    //     getCount: function() {return this.count; }
+    // }
+    // console.log(User.getCount());
+
+    // var main=document.getElementById("main");
+    // console.log(main.children[0].src);
+    // console.log(main.firstElementChild.src);
+    // console.log(document.getElementsByTagName("img").src);
+    // console.log(document.getElementsByName("logo")[0].src);
+
+</script>
+</html>

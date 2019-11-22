@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button id="btn1">猜数字</button>
+    <button id="btn2">输出猜过的数字</button>
+</body>
+<script>
+    var btn1=document.getElementById("btn1");
+    var btn2=document.getElementById("btn2");
+    var a=parseInt(Math.random()*100);
+    var cnt;
+    var arr=new  Array();
+    btn1.onclick=function () {
+        cnt=prompt("请输入你猜的数字");
+        if(cnt<a){
+            alert("猜小了");
+        }else if(cnt>a){
+            alert("猜大了");
+        }else{
+            alert("恭喜你猜对啦");
+            break;
+        }
+        arr[i]=cnt; 
+    };
+    btn2.onclick=function(){
+        console.log(arr);
+    };
+
+</script>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DOM树</title>
+    <style>
+        li{
+
+        }
+        #list li{
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <a class="lin" id="link" href="7-2.html">
+        我的链接
+    </a>
+    <h1>我的标题</h1> -->
+    <button id="btn">改变</button>
+    <ul id="list">
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+        <li>d</li>
+        <li>e</li>
+    </ul>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+    <script>
+        var list = document.getElementById('list');
+        var btn = document.getElementById('btn');
+        var lis = list.getElementsByTagName('li');
+        console.log(list.children);
+        for(var i = 0; i<lis.length; i++){
+            lis[i].onclick = function(){
+                console.log(this.innerHTML);
+
+            }
+        }
+
+
+
+
+
+        function fn(){
+                
+        }
+        btn.onclick = function(){
+            setInterval(fn,1000)
+            // console.log(this.innerHTML);
+            // console.log(list.innerHTML);
+            // list.innerText = '<li>hello world</li>';
+        }
+
+
+
+
+
+
+
+    // var a = document.getElementById('link');
+    // var b = document.getElementsByTagName('a');
+    // var c = document.getElementsByClassName('lin');
+    // console.log(a);
+    // console.log(b);
+    // console.log(c);
+    // console.log(b[0].parentNode);
+    // console.log(c[0].childNodes);
+    // console.log(a.innerHTML);
+
+
+
+
+
+    // 浏览器内置的JS解释器会为载入的每个HTML文档创建一个对应的document对象
+    // document对象是我们的文档节点
+    // 通过使用document对象，可以从脚本中对HTML页面中的所有元素进行访问
+
+    
+    // console.log(typeof document);
+    // console.log(document);
+    // console.log(tit.className);
+    </script>
+</body>
+
+</html>

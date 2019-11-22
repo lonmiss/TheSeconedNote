@@ -1,0 +1,79 @@
+package homeWork6;
+
+import java.awt.geom.Arc2D.Float;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.Writer;
+
+
+public class EmployeeManagementSystem {
+	final static int MaxPeople=100;
+	private int count;
+	// 执行程序
+	Employee[] peoNums=new Employee[MaxPeople];
+	
+	count=0;
+	
+	FileReader fReader = new FileReader("F:\\employees.txt");
+    BufferedReader bufferedReader = new BufferedReader(fReader);
+    String s1;
+    s1=bufferedReader.readLine();
+    while (s1!=null) {
+    	String[] s2=s1.split(" ");//将数据分离
+    	
+    	//保存数据
+		peoNums[count].setNo(s2[0]);
+		peoNums[count].setName(s2[1]);
+		peoNums[count].setHeight(java.lang.Float.parseFloat(s2[2]));
+		peoNums[count].setWeight(java.lang.Float.parseFloat(s2[3]));
+		
+		s1=bufferedReader.readLine();
+	}
+    
+	bufferedReader.close();
+	fReader.close();
+
+	//打印一个员工的信息
+	public void selfInforment (Employee a){
+		String s1="编号："+a.getNo()+"姓名："+a.getName()+"   身高："+a.getHeight()+"   体重："+a.getWeight();
+		System.out.println(s1);
+	}
+	//添加人员
+	public void addPeo(String no,String name,float height,float weight,Employee a){
+		a.setNo(no);
+		a.setName(name);
+		a.setHeight(height);
+		a.setWeight(weight);
+	}
+	//根据编号修改职工体重信息
+	public void alterPeo(Employee[] arr,String no,float weightData) {
+		for (int i = 0; i < arr.length; i++) {
+			if(arr[i].getNo()==no){
+				arr[i].setWeight(weightData);
+				selfInforment(arr[i]);
+				break;
+			}
+		}
+	}
+	//根据姓名查找职工信息
+	public void findName(Employee[] arr,String name){
+		for (int i = 0; i < arr.length; i++) {
+			if(arr[i].getName()==name){
+				selfInforment(arr[i]);
+				break;
+			}
+		}
+	}
+	//显示所有职工信息
+	public static void printAll(Employee[] arr){
+		for (int i = 0; i < arr.length; i++) {
+			selfInforment(arr[i]);
+		}
+	}
+	
+	
+
+}

@@ -1,0 +1,45 @@
+package homeWork6;
+
+public class EmployeeManagementSystem {
+	
+	//打印一个员工的信息
+	public static void selfInforment (Employee a){
+		String s1="编号："+a.getNo()+"姓名："+a.getName()+"   身高："+a.getHeight()+"   体重："+a.getWeight();
+		System.out.println(s1);
+	}
+	//添加人员
+	public void addPeo(String no,String name,float height,float weight,Employee a){
+		a.setNo(no);
+		a.setName(name);
+		a.setHeight(height);
+		a.setWeight(weight);
+	}
+	//根据编号修改职工体重信息
+	public void alterPeo(Employee[] arr,String no,float weightData) {
+		for (int i = 0; i < arr.length; i++) {
+			if(arr[i].getNo()==no){
+				arr[i].setWeight(weightData);
+				selfInforment(arr[i]);
+				break;
+			}
+		}
+	}
+	//根据姓名查找职工信息
+	public void findName(Employee[] arr,String name){
+		for (int i = 0; i < arr.length; i++) {
+			if(arr[i].getName()==name){
+				selfInforment(arr[i]);
+				break;
+			}
+		}
+	}
+	//显示所有职工信息
+	public static void printAll(Employee[] arr){
+		for (int i = 0; i < arr.length; i++) {
+			selfInforment(arr[i]);
+		}
+	}
+	
+	
+
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #table{
+            height: 300px;
+            width: 480px;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" id="table">
+        <tr>
+            <td>
+                <button>1点我删除</button>
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <button>2点我删除</button>
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <button>3点我删除</button>
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <button>4点我删除</button>
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <button>5点我删除</button>
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+<script>
+    //var btnList=table.document.getElementsByTagName("button");
+    var table=document.getElementById("table");
+    var btnList=table.getElementsByTagName("button");
+
+    for (var i = 0; i <btnList.length ; i++) {
+        btnList[i].onclick=function () {
+            //事件的触发，用this代表该对象
+            // var header=this.parentElement.parentElement.parentElement;
+            // header.removeChild(header.firstElementChild);
+
+            var trNode=this.parentNode.parentNode;
+            trNode.parentNode.removeChild(trNode);
+        };
+    }
+</script>
+</html>

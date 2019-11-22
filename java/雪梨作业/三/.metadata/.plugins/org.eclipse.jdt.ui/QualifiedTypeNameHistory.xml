@@ -27,8 +27,21 @@
 <fullyQualifiedTypeName name="work4.point"/>
 <fullyQualifiedTypeName name="LWQ119.Compere"/>
 <fullyQualifiedTypeName name="org.openxmlformats.schemas.xpackage.x2006.digitalSignature.RelationshipReferenceDocument"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="LWQ119.Square"/>
 <fullyQualifiedTypeName name="LWQ119.Graph"/>
+<fullyQualifiedTypeName name="java.lang.Float"/>
+<fullyQualifiedTypeName name="homeWork6.EmployeeManagementSystem"/>
+<fullyQualifiedTypeName name="org.apache.commons.collections4.map.StaticBucketMap"/>
+<fullyQualifiedTypeName name="homeWork6.Employee"/>
+<fullyQualifiedTypeName name="javax.lang.model.element.VariableElement"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.lang.Readable"/>
+<fullyQualifiedTypeName name="org.apache.commons.collections4.functors.ForClosure"/>
+<fullyQualifiedTypeName name="org.omg.CORBA.PRIVATE_MEMBER"/>
+<fullyQualifiedTypeName name="WQHomework.Employee"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="BXhomework.Employee"/>
+<fullyQualifiedTypeName name="BXhomework.EmployeeManagementSystem"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="org.apache.poi.hpbf.extractor.PublisherTextExtractor"/>
 </qualifiedTypeNameHistroy>

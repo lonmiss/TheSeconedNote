@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul id="list">
+        <li id="ls1">列表项1</li>
+        <li>列表项2</li>
+        <li>列表项3</li>
+        <li>列表项4</li>
+        <li>列表项5</li>
+    </ul>
+    <button id="appendChild">appendChild</button>
+    <button id="insertBefore">insertBefore</button>
+    <button id="removeChild">removeChild</button>
+</body>
+<script>
+    var cnt=6;
+    var insertBefore=document.getElementById("insertBefore");
+    var appendChild=document.getElementById("appendChild");
+    var list=document.getElementById("list");
+    // appendChild.onclick=function () {
+    //     var li=document.createElement("li");
+    //     li.innerText="列表项"+cnt;
+    //     cnt+=1;
+    //     list.appendChild(li);
+    // };
+    // var ls1=document.getElementById("ls1");
+    // var cnt1=0;
+    // insertBefore.onclick=function () {
+    //     var li1=document.createElement("li");
+    //     li1.innerText="列表项"+cnt1;
+    //     cnt1--;
+    //     list.insertBefore(li1,ls1);
+    //     ls1=li1;
+    // };
+
+    appendChild.onclick=function () {
+        var liNode=document.createElement("li");
+        var liCount=list.children.length;
+        liNode.innerHTML="列表项"+(liCount+1);
+        list.appendChild(liNode);
+    };
+
+    var liCount=0;
+    insertBefore.onclick=function () {
+        var liNode=document.createElement("li");
+        liNode.innerHTML="列表项"+liCount;
+        liCount--;
+        //list.insertBefore(liNode,list.firstElementChild);
+        list.insertBefore(liNode,list.children[0]);
+    }
+
+    var removeChild=document.getElementById("removeChild");
+    var ls1=document.getElementById("ls1");
+    var str=ls1.parentNode;
+    removeChild.onclick=function () {
+        //str.removeChild(str.firstChild);
+        list.removeChild(list.children[0]);
+    }
+</script>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button id="btn">替换</button>
+    <div id="container">
+        <p id="p1">这是一个图片</p>
+    </div>
+</body>
+<script>
+    var btn=document.getElementById("btn");
+    var container=document.getElementsByTagName("container");
+    var p1=document.getElementById("p1");
+    var cnt;
+    btn.onclick=function () {
+        if(container.firstElementChild==p1){
+            var img=document.createElement("img");
+            cnt=img;
+            img.src="../课堂文件/图片切换/images/3.jpg";
+            p1.parentNode.replaceChild(img,p1);
+        }else{
+            var p=document.createElement("p");
+            p.innerHTML="这是一个图片";
+            p1.parentNode.replaceChild(p,cnt);
+        }
+
+    }
+
+</script>
+</html>

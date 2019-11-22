@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #test{
+            height: 200px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <!--<p id="pp">你好，那只按时数据报就</p>-->
+    <!--<table id="test" border="1">-->
+        <!--<tr>-->
+            <!--<th><button>00000</button></th>-->
+            <!--<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>-->
+            <!--<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>-->
+        <!--</tr>-->
+        <!--<tr>-->
+            <!--<th><button>00001</button></th>-->
+            <!--<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>-->
+            <!--<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>-->
+        <!--</tr>-->
+        <!--<tr>-->
+            <!--<th><button>00002</button></th>-->
+            <!--<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>-->
+            <!--<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>-->
+        <!--</tr>-->
+        <!--<tr>-->
+            <!--<th><button>00003</button></th>-->
+            <!--<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>-->
+            <!--<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>-->
+        <!--</tr>-->
+        <!--<tr>-->
+            <!--<th><button>00004</button></th>-->
+            <!--<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>-->
+            <!--<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>-->
+        <!--</tr>-->
+    <!--</table>-->
+    <a href="http://www.baidu.com">百度</a>
+    <button id="btn1">前进</button>
+    <button id="btn2">后退</button>
+</body>
+<script>
+    var btn1=document.getElementById("btn1");
+    var btn2=document.getElementById("btn2");
+    btn1.onclick=function () {
+      history.back();  //后退到上一个访问过的页面
+    };
+    btn2.onclick=function () {
+        history.forward();//前进到下一个访问的页面
+    };
+
+    // var time=document.getElementById("time");
+    // var btn1=document.getElementById("btn1");
+    // var btn2=document.getElementById("btn2");
+    // var cnt=0;
+    // var flag;
+    // btn1.onclick=function () {
+    //     flag=setInterval(function () {
+    //         time.innerHTML=cnt;
+    //         cnt++;
+    //     },1000)
+    // };
+    // btn2.onclick=function () {
+    //     clearInterval(flag);
+    // };
+
+
+
+    // var cnt;
+    // var btn1=document.getElementById("btn1");
+    // var btn2=document.getElementById("btn2");
+    // btn1.onclick=function () {
+    //     cnt=setTimeout(function () {
+    //         alert("我相信~");
+    //     },4000);
+    // };
+    // btn2.onclick=function () {
+    //     clearTimeout(cnt);
+    // }
+
+    // var nowTime=new Date();
+    // console.log("请输出当前时间"+nowTime.toDateString());
+    // console.log("请输出当前年："+nowTime.getFullYear());
+    // console.log("请输出当前月份："+(nowTime.getMonth()+1));
+    // console.log("请输出当前日期："+nowTime.getDate());
+    // console.log("请输出当前时间"+nowTime.getHours()+":"+nowTime.getMinutes()+":"+nowTime.getSeconds());
+    // console.log("请输出当前是周几："+(nowTime.getDay()));
+
+
+    // var a=1.4;
+    // var b=1.6;
+    // //四舍五如
+    // console.log(Math.round(a));//1
+    // console.log(Math.round(b));//2
+    // //向下取整
+    // console.log(Math.floor(a));//1
+    // console.log(Math.floor(b));//1
+    // //向上取整
+    // console.log(Math.ceil(a));//2
+    // console.log(Math.ceil(b));//2
+    // //随机生成0~1随机数
+    // console.log(Math.random());
+
+
+    // var str = "no zuo no die";
+    // var arr = [];
+    // str.split("  ");
+    // for (var i = 0; i <str.length ; i++) {
+    //     arr[i]=str[i].toUpperCase();
+    // }
+    // console.log(arr);
+
+
+    // var arr=new Array('a','b','c');
+    // var cnt=arr.unshift('d');
+    // console.log(arr);
+    // console.log(cnt);
+
+    // var arry=['a','b',,'d'];
+    // arry.length=3;
+    // alert(arry);
+    // console.log(arry);
+    // var pp=document.getElementById("pp");
+    // console.log(pp.nodeValue);
+    // console.log(pp.nodeName);
+    // var text=document.getElementById("test");
+    // var btnList=document.getElementsByTagName("button");
+    // for (var i = 0; i < btnList.length; i++) {
+    //     btnList[i].onclick=function () {
+    //         var ptrNode=this.parentNode.parentNode;
+    //         text.children[0].removeChild(ptrNode);
+    //     }
+    // }
+    //
+
+    //创建一个表单
+    // document.write("<table id='test' border='1'>");
+    // for (var i = 0; i < 6; i++) {
+    //     document.write("<tr>");
+    //     for (var j = 0; j < 6; j++) {
+    //         document.write("<th>&nbsp;&nbsp;</th>")
+    //     }
+    //     document.write("</tr>");
+    // }
+    // document.write("</table>");
+
+    function add(a,b,c) {
+        return a+b+c;
+    }
+    console.log(add(1,2));//NaN
+    console.log(add(1,2,3));
+    console.log(add(1,2,3,4));
+
+</script>
+</html>

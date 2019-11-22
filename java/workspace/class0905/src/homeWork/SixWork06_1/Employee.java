@@ -1,16 +1,6 @@
 package homeWork.SixWork06_1;
 
 public class Employee {
-    private static int cnt;
-
-    public static int getCnt() {
-        return cnt;
-    }
-
-    public static void setCnt(int cnt) {
-        Employee.cnt = cnt;
-    }
-
     private int no;//工号
     private String name;//姓名
     private float height;//身高
@@ -45,6 +35,7 @@ public class Employee {
     double getBMI() {
         return this.weight/(this.height*this.height);
     }
+    @Override
     public String toString() {
         return "Employee [no=" + no + ", name=" + name + ", height=" + height + ", weight=" + weight + "]";
     }

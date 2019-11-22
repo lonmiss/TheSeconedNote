@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="container">
+        <p>段落</p>
+        <h3>标题1</h3>
+        <div>div2</div>
+        <h3>标题3</h3>
+        <div>div4</div>
+        <p>段落5</p>
+        <h3>标题6</h3>
+    </div>
+</body>
+<script>
+    /*
+        获取container内部段落div标记内部的内容
+        存储数组中arr中，在控制台进行输出
+     */
+    // var container=document.getElementById("container");
+    // //var pList=container.getElementsByTagName("p");
+    // var arr=new Array();
+    // var cnt=0;
+    // for (var i = 0; i <container.children.length ; i++) {
+    //     if(container.children[i].nodeName==="P")
+    //     {
+    //         arr[cnt++]=container.children[i].nodeValue;
+    //     }
+    // }
+    // for (var i = 0; i < arr.length; i++) {
+    //     console.log(arr[i]);
+    // }
+
+    var container=document.getElementById("container");
+    var childList=container.children;
+    var arr=[];
+    var cnt=0;
+    for (var i = 0; i <childList.length ; i++) {
+        //console.log(childList[i].nodeName);
+        if(childList[i].nodeName=="P"||childList[i].nodeName=="DIV"){
+            //arr.push(childList[i].innerText);
+            arr[cnt++]=childList[i].innerHTML;    //错误没有成功
+        }
+    }
+    for (var i = 0; i <arr.length ; i++) {
+        console.log(arr[i]);
+    }
+</script>
+</html>
